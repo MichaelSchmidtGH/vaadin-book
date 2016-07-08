@@ -1,0 +1,6570 @@
+.v-assistive-device-only {
+	position: absolute;
+	top: -2000px;
+	left: -2000px;
+	width: 10px;
+	overflow: hidden;
+}
+
+.v-radiobutton {
+	-webkit-user-select: none;
+}
+
+@-webkit-keyframes v-notification-animate-out {
+		100% {
+		opacity: 0;
+	}
+	}
+
+@-moz-keyframes v-notification-animate-out {
+		100% {
+		opacity: 0;
+	}
+	}
+
+@keyframes v-notification-animate-out {
+		100% {
+		opacity: 0;
+	}
+	}
+
+.v-vaadin-version:after {
+	content: "7.6.7";
+}
+
+.v-generated-body {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.v-modal-window-open {
+	overflow: hidden;
+}
+
+@font-face {
+	font-family: FontAwesome;
+	src: url(../base/fonts/fontawesome-webfont.eot);
+	src: url(../base/fonts/fontawesome-webfont.eot?#iefix) format("embedded-opentype"), url(../base/fonts/fontawesome-webfont.woff) format("woff"), url(../base/fonts/fontawesome-webfont.ttf) format("truetype"), url(../base/fonts/fontawesome-webfont.svg) format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.FontAwesome {
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+}
+
+@font-face {
+	font-family: ThemeIcons;
+	src: url(../base/fonts/themeicons-webfont.eot);
+	src: url(../base/fonts/themeicons-webfont.eot?#iefix) format("embedded-opentype"), url(../base/fonts/themeicons-webfont.woff) format("woff"), url(../base/fonts/themeicons-webfont.ttf) format("truetype"), url(../base/fonts/themeicons-webfont.svg) format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.ThemeIcons {
+	font-family: ThemeIcons;
+	font-style: normal;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+}
+
+.myproject .v-widget {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: left;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: bottom;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+.myproject .v-absolutelayout-wrapper {
+	position: absolute;
+	overflow: hidden;
+}
+
+.myproject .v-absolutelayout-margin, .myproject .v-absolutelayout-canvas {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.myproject .v-absolutelayout.v-has-height > div, .myproject .v-absolutelayout.v-has-height > div > div {
+	height: 100%;
+}
+
+.myproject .v-absolutelayout.v-has-width > div, .myproject .v-absolutelayout.v-has-width > div > div {
+	width: 100%;
+}
+
+.myproject .v-accordion {
+	position: relative;
+	outline: none;
+	overflow: visible;
+	text-align: left;
+	font-size: 0;
+}
+
+.myproject .v-accordion-item {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.myproject .v-accordion-item-caption {
+	overflow: visible;
+	white-space: nowrap;
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+}
+
+.myproject .v-accordion-item-caption .v-caption {
+	cursor: pointer;
+	font-size: 13px;
+}
+
+.myproject .v-accordion-item-open .v-accordion-item-caption .v-caption {
+	cursor: default;
+}
+
+.myproject .v-accordion-item-content {
+	position: absolute;
+	width: 100%;
+}
+
+.myproject .v-browserframe {
+	font-size: 0;
+}
+
+.v-webkit.v-ios .myproject .v-browserframe {
+	-webkit-overflow-scrolling: touch;
+	overflow: auto;
+}
+
+.myproject .v-browserframe > span {
+	font-size: 13px;
+}
+
+.myproject .v-button {
+	display: inline-block;
+	zoom: 1;
+	text-align: center !important;
+	text-decoration: none;
+	border: 2px outset #ddd;
+	background: #eee;
+	cursor: pointer;
+	white-space: nowrap;
+	margin: 0;
+	padding: 0.2em 1em;
+	color: inherit;
+	font: inherit;
+	font-size: 13px;
+	line-height: normal;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.myproject .v-button.v-disabled {
+	cursor: default;
+}
+
+.myproject .v-button-wrap, .myproject .v-button-caption {
+	vertical-align: baseline;
+	white-space: nowrap;
+	font: inherit;
+	color: inherit;
+	line-height: normal;
+}
+
+.myproject .v-button .v-icon {
+	vertical-align: middle;
+	margin-right: 3px;
+	border: none;
+}
+
+.myproject .v-button .v-errorindicator {
+	display: inline-block;
+	zoom: 1;
+	vertical-align: middle;
+	float: none;
+}
+
+.myproject .v-button-link {
+	border: none;
+	text-align: left !important;
+	background: transparent;
+	padding: 0;
+	color: inherit;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ie-user-select: text;
+	user-select: text;
+}
+
+.v-sa .myproject .v-button-link:focus {
+	outline-offset: -3px;
+}
+
+.myproject .v-button-link .v-button-caption {
+	text-decoration: underline;
+	color: inherit;
+	text-align: left;
+}
+
+.myproject .v-nativebutton .v-icon {
+	vertical-align: middle;
+	margin-right: 3px;
+	border: none;
+}
+
+.myproject .v-nativebutton .v-errorindicator {
+	display: inline-block;
+	zoom: 1;
+	vertical-align: middle;
+	float: none;
+}
+
+.myproject .v-nativebutton-link {
+	border: none;
+	text-align: left !important;
+	background: transparent;
+	padding: 0;
+	color: inherit;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ie-user-select: text;
+	user-select: text;
+}
+
+.myproject .v-nativebutton-link .v-nativebutton-caption {
+	text-decoration: underline;
+	color: inherit;
+	text-align: left;
+}
+
+.myproject .v-nativebutton {
+	text-align: center !important;
+	cursor: pointer;
+	white-space: nowrap;
+	margin: 0;
+	color: inherit;
+	font: inherit;
+	line-height: normal;
+}
+
+.myproject .v-nativebutton .v-nativebutton-caption {
+	vertical-align: middle;
+	white-space: nowrap;
+	font: inherit;
+	color: inherit;
+}
+
+.myproject .v-nativebutton .v-icon {
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.myproject .v-nativebutton .v-errorindicator {
+	display: inline-block;
+	zoom: 1;
+	float: none;
+}
+
+.v-ie .myproject .v-nativebutton {
+	overflow: visible;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.v-ie .myproject .v-nativebutton-link {
+	padding: 0;
+}
+
+.myproject .v-checkbox, .myproject .v-checkbox label, .myproject .v-checkbox input, .myproject .v-checkbox .v-icon {
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.myproject .v-checkbox .v-icon {
+	margin: 0 2px;
+}
+
+.myproject .v-checkbox .v-errorindicator {
+	float: none;
+	display: inline;
+	display: inline-block;
+	zoom: 1;
+}
+
+.myproject .v-captionwrapper {
+	text-align: left;
+}
+
+.myproject .v-caption {
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 13px;
+}
+
+.myproject .v-errorindicator {
+	display: inline-block;
+}
+
+.myproject .v-caption .v-icon {
+	display: inline-block;
+	padding-right: 2px;
+	vertical-align: middle;
+}
+
+.myproject .v-caption .v-captiontext {
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.myproject .v-caption .v-required-field-indicator {
+	display: inline-block;
+}
+
+.myproject .v-colorpicker {
+	text-align: center;
+}
+
+.myproject .v-colorpicker-button-color {
+	border: 1px solid silver;
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+
+.myproject .v-colorpicker-area {
+	border: 1px solid silver;
+	margin: 1px auto;
+}
+
+.myproject .v-colorpicker.v-default-caption-width {
+	width: 100px;
+}
+
+.myproject .v-colorpicker-history {
+	margin: 5px;
+}
+
+.myproject .v-colorpicker-history td {
+	border: 1px solid silver !important;
+}
+
+.myproject .v-colorpicker-history td {
+	line-height: 15px;
+}
+
+.myproject .v-colorpicker-popup {
+	width: 244px;
+}
+
+.myproject .v-colorpicker-popup .v-scrollable {
+	background-color: #dddddd;
+}
+
+.myproject .v-colorpicker-popup .v-tabsheet-content .v-scrollable {
+	background-color: #eaeaea;
+}
+
+.myproject .v-colorpicker-popup .v-tabsheet-content .v-tabsheet-tabsheetpanel {
+	background: transparent;
+}
+
+.myproject .v-colorpicker-popup .resize-button {
+	border: 0px solid silver;
+	background: url(../base/colorpicker/images/resizebg.png);
+	margin-top: 5px;
+}
+
+.myproject .v-colorpicker-popup .resize-button-caption {
+	display: none;
+}
+
+.myproject .v-colorpicker-popup .resize-button:hover {
+	background: url(../base/colorpicker/images/resizebg-selected.png);
+}
+
+.myproject .v-colorpicker-popup .resize-button:focus {
+	outline: none;
+}
+
+.myproject .v-colorpicker-gradient {
+	width: 220px;
+	height: 220px;
+	padding-left: 10px;
+	margin-top: 0px;
+}
+
+.myproject .v-colorpicker-gradient .v-colorpicker-gradient-clicklayer {
+	background-color: white;
+	filter: alpha(opacity = 0);
+	opacity: 0;
+}
+
+.myproject .v-colorpicker-popup .rgb-gradient .v-colorpicker-gradient-background {
+	width: 220px;
+	height: 220px;
+	background: url(../base/colorpicker/images/gradient2.png);
+}
+
+.myproject .v-colorpicker-popup .hsv-gradient .v-colorpicker-gradient-foreground {
+	background: url(../base/colorpicker/images/gradient.png);
+}
+
+.myproject .v-colorpicker-popup .v-colorpicker-gradient-lowerbox {
+	border-right: 1px solid white;
+	border-top: 1px solid white;
+}
+
+.myproject .v-colorpicker-popup .v-colorpicker-gradient-higherbox {
+	border-left: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.myproject .v-colorpicker-popup .rgb-sliders {
+	width: 227px;
+	padding-left: 10px;
+	color: #444444;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.myproject .v-colorpicker-popup .rgb-sliders .red .v-slider-base {
+	background-color: red;
+}
+
+.myproject .v-colorpicker-popup .rgb-sliders .green .v-slider-base {
+	background-color: green;
+}
+
+.myproject .v-colorpicker-popup .rgb-sliders .blue .v-slider-base {
+	background-color: blue;
+}
+
+.myproject .v-colorpicker-popup .hsv-sliders {
+	padding-left: 10px;
+	color: #444444;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.myproject .v-colorpicker-popup .hue-slider {
+	height: 10px;
+	border: 0px solid silver;
+	background-image: url(../base/colorpicker/images/slider_hue_bg.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 3px;
+	margin-top: 0px;
+}
+
+.myproject .v-colorpicker-popup .hue-slider .v-slider-handle {
+	margin-top: -2px;
+}
+
+.myproject .v-colorpicker-popup .hue-slider .v-slider-base {
+	border: 0px none;
+	height: 0px;
+	background-color: transparent;
+}
+
+.myproject .v-colorpicker-popup .v-colorpicker-preview {
+	margin-top: 5px;
+	padding-left: 11px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+}
+
+.myproject .v-colorpicker-popup .v-absolutelayout-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.myproject .v-colorpicker-popup .v-colorpicker-preview-textfield {
+	background: none;
+	overflow: hidden;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.myproject .v-colorpicker-popup .v-textfield-dark {
+	color: #FFFFFF;
+}
+
+.myproject .v-colorpicker-popup .v-textfield-light {
+	color: #000000;
+}
+
+.myproject .v-colorpicker-popup .colorselect {
+	margin-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.myproject .v-colorpicker-popup .v-tabsheet .v-colorpicker-grid {
+	height: 319px;
+}
+
+.myproject .v-colorpicker-popup .colorselect td {
+	line-height: 15px;
+}
+
+.myproject .v-colorpicker-popup .v-filterselect {
+	padding-right: 16px;
+}
+
+.myproject .v-calendar-nresize DIV DIV {
+	cursor: n-resize !important;
+}
+
+.myproject .v-calendar-sresize DIV DIV {
+	cursor: s-resize !important;
+}
+
+.myproject .v-calendar {
+	background-color: #fff;
+}
+
+.myproject .v-calendar-header-month, .myproject .v-calendar-header-week {
+	border-bottom: 1px solid #c1c1c1;
+}
+
+.myproject .v-calendar-header-day {
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+	line-height: normal;
+}
+
+.myproject .v-calendar-header-week .v-calendar-header-day:hover {
+	cursor: pointer;
+	color: #222;
+}
+
+.myproject .v-calendar-header-day-today {
+	font-weight: bold;
+	color: #444;
+}
+
+.myproject .v-calendar-header-month td:first-child {
+	padding-left: 19px;
+}
+
+.myproject .v-calendar-header-week .v-calendar-back, .myproject .v-calendar-header-week .v-calendar-next {
+	border: none;
+	padding: 0;
+	margin: 0;
+	height: 12px;
+	width: 12px;
+	overflow: hidden;
+	background: transparent url(../base/calendar/img/arrows.png) no-repeat 50% 0;
+	opacity: 0.3;
+	filter: alpha(opacity = 30);
+	cursor: default;
+}
+
+.myproject .v-calendar-header-week .v-calendar-back:hover, .myproject .v-calendar-header-week .v-calendar-next:hover {
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+.myproject .v-calendar-header-week .v-calendar-back:active, .myproject .v-calendar-header-week .v-calendar-next:active {
+	opacity: 1;
+	filter: alpha(opacity = 100);
+}
+
+.myproject .v-calendar-header-week .v-calendar-next {
+	background-position: 50% -12px;
+}
+
+.myproject .v-calendar-month {
+	outline: none;
+}
+
+.myproject .v-calendar-week-numbers {
+	width: 20px;
+	border-right: 1px solid #ccc;
+}
+
+.myproject .v-calendar-week-number {
+	border: none;
+	background: transparent;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	opacity: 0.5;
+	width: 20px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+
+.myproject .v-calendar-week-number:hover {
+	opacity: 1;
+}
+
+.myproject .v-calendar-month-day {
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	outline: none;
+}
+
+.myproject .v-calendar-month-day-today {
+	background-color: #e7f0f5;
+}
+
+.myproject .v-calendar-month-day-selected {
+	background-color: #fffee7;
+}
+
+.myproject .v-calendar-month-day-dragemphasis {
+	background-color: #a8a8a8;
+}
+
+.myproject .v-calendar-month-day-scrollable {
+	overflow-y: scroll;
+}
+
+.myproject .v-calendar-day-number {
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	text-align: right;
+	padding-right: 3px;
+	white-space: nowrap;
+}
+
+.myproject .v-calendar-day-number:hover {
+	cursor: pointer;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+.myproject .v-calendar-month .v-calendar-spacer, .myproject .v-calendar-month .v-calendar-bottom-spacer, .myproject .v-calendar-month .v-calendar-bottom-spacer-empty {
+	height: 15px;
+	font-size: 11px;
+}
+
+.myproject .v-calendar-month .v-calendar-bottom-spacer:hover {
+	cursor: pointer;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+.myproject .v-calendar-event {
+	line-height: 14px;
+	font-size: 11px;
+	padding: 0 0 0 4px;
+	cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	outline: none;
+}
+
+.myproject .v-calendar-event-month {
+	margin-bottom: 1px;
+	white-space: nowrap;
+}
+
+.myproject .v-calendar-event-month:hover {
+	text-decoration: underline;
+}
+
+.myproject .v-calendar-event-all-day {
+	background: #999;
+	display: block;
+	margin-left: -2px;
+}
+
+.myproject div.v-calendar-event-all-day {
+	color: #fff;
+	height: 14px;
+}
+
+.myproject .v-calendar-event-continued-from {
+	margin-left: 0;
+}
+
+.myproject .v-calendar-event-start {
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	margin-left: 0;
+}
+
+.myproject .v-calendar-event-end {
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-bottomright: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.myproject .v-calendar-week-wrapper {
+	position: relative;
+}
+
+.myproject .v-calendar-times {
+	width: 51px;
+}
+
+.myproject .v-calendar-time {
+	padding: 0 8px 7px 0;
+	margin-top: -7px;
+	text-align: right;
+	font-size: 11px;
+	color: #666;
+	border-right: 1px solid #ccc;
+}
+
+.myproject .v-calendar-weekly-longevents {
+	border-left: 1px solid #ccc;
+	border-bottom: 2px solid #bbb;
+	margin-left: 50px;
+}
+
+.myproject .v-calendar-weekly-longevents .v-calendar-datecell {
+	border-right: 1px solid #ccc;
+	padding: 1px 0 0;
+}
+
+.myproject .v-calendar-weekly-longevents .v-calendar-event {
+	height: 14px;
+	margin-bottom: 1px;
+}
+
+.myproject .v-calendar-weekly-longevents .v-calendar-event:hover {
+	text-decoration: underline;
+}
+
+.myproject .v-calendar-day-times {
+	border-right: 1px solid #ccc;
+	outline: none;
+}
+
+.myproject .v-calendar-day-times .v-datecellslot, .myproject .v-calendar-day-times .v-datecellslot-even {
+	border-bottom: 1px solid #ccc;
+}
+
+.myproject .v-calendar-day-times .v-datecellslot-even {
+	border-bottom-color: #eee;
+}
+
+.myproject .v-calendar-day-times .v-daterange {
+	background-color: #a8a8a8;
+}
+
+.myproject .v-calendar-day-times .v-reserved {
+	background-color: #FF3333;
+}
+
+.myproject .v-calendar-day-times .dragemphasis {
+	background-color: #a8a8a8;
+}
+
+.myproject .v-calendar-week-wrapper .v-calendar-event {
+	padding: 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-top: -1px;
+}
+
+.myproject .v-calendar-event-caption {
+	position: absolute;
+	z-index: 1;
+	top: 2px;
+	left: 4px;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: normal;
+}
+
+.myproject .v-calendar-event-content {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #777;
+	background: #eee;
+	opacity: 0.8;
+	filter: alpha(opacity = 80);
+	height: 14px;
+}
+
+.myproject .v-calendar-current-time {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	overflow: hidden;
+	background: #5a6c86;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+	z-index: 2;
+}
+
+.myproject .v-calendar-event-resizetop {
+	position: absolute;
+	cursor: n-resize;
+	height: 5%;
+	min-height: 3px;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.myproject .v-calendar-event-resizebottom {
+	position: absolute;
+	cursor: s-resize;
+	height: 5%;
+	min-height: 3px;
+	bottom: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.myproject .v-calendar-month-sizedheight .v-calendar-month-day {
+	height: 100px;
+}
+
+.myproject .v-calendar-month-sizedwidth .v-calendar-month-day {
+	width: 100px;
+}
+
+.myproject .v-calendar-header-month-Hsized .v-calendar-header-day {
+	width: 101px;
+}
+
+.myproject .v-calendar-header-month-Hsized td:first-child {
+	padding-left: 21px;
+}
+
+.myproject .v-calendar-header-day-Hsized {
+	width: 200px;
+}
+
+.myproject .v-calendar-week-numbers-Vsized .v-calendar-week-number {
+	height: 100px;
+	line-height: 100px;
+}
+
+.myproject .v-calendar-week-wrapper-Vsized {
+	height: 400px;
+	overflow-x: hidden !important;
+}
+
+.myproject .v-calendar-times-Vsized .v-calendar-time {
+	height: 38px;
+}
+
+.myproject .v-calendar-times-Hsized .v-calendar-time {
+	width: 42px;
+}
+
+.myproject .v-calendar-day-times-Vsized .v-datecellslot, .myproject .v-calendar-day-times-Vsized .v-datecellslot-even {
+	height: 18px;
+}
+
+.myproject .v-calendar-day-times-Hsized, .myproject .v-calendar-day-times-Hsized .v-datecellslot, .myproject .v-calendar-day-times-Hsized .v-datecellslot-even {
+	width: 200px;
+}
+
+.myproject.v-app {
+	height: 100%;
+}
+
+.myproject.v-app, .myproject .v-window, .myproject .v-popupview-popup, .myproject .v-label, .myproject .v-caption {
+	cursor: default;
+}
+
+.myproject .v-window {
+	box-shadow: 0 5px 18px 0 rgba(0, 0, 0, 0.5);
+}
+
+.myproject .v-datefield-popup, .myproject .v-filterselect-suggestpopup, .myproject .v-menubar-popup, .myproject .v-slider-feedback, .myproject .v-popupview-popup, .myproject .v-contextmenu {
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+body .myproject.v-app .v-app-loading {
+	background-image: url(../base/common/img/loading-indicator.gif);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	width: 100%;
+	height: 100%;
+}
+
+.myproject .v-ui {
+	height: 100%;
+	width: 100%;
+	outline: none;
+	position: relative;
+}
+
+.myproject .v-ui.v-ui-embedded {
+	margin-top: -1px;
+	border-top: 1px solid transparent;
+}
+
+.myproject .v-ui:active, .myproject .v-ui:focus {
+	outline: none;
+}
+
+.myproject.v-app select, .myproject .v-window select {
+	margin: 0;
+}
+
+.myproject .v-disabled {
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+	cursor: default;
+}
+
+.myproject .v-disabled * {
+	cursor: default;
+}
+
+* html .myproject .v-disabled {
+	zoom: 1;
+}
+
+* + html .myproject .v-disabled {
+	zoom: 1;
+}
+
+.myproject .v-disabled .v-disabled {
+	opacity: 1;
+}
+
+.myproject .v-required-field-indicator {
+	padding-left: 2px;
+	color: red;
+}
+
+.myproject .v-form fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+.myproject .v-form-content {
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.myproject .v-tooltip {
+	cursor: default;
+	background: #fff;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.myproject .v-tooltip-text {
+	overflow: auto;
+}
+
+.myproject .v-tooltip .v-errormessage {
+	overflow: auto;
+}
+
+.myproject .v-contextmenu {
+	background: #fff;
+}
+
+.myproject .v-contextmenu .gwt-MenuItem {
+	cursor: pointer;
+	vertical-align: middle;
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+.myproject .v-contextmenu .gwt-MenuBar {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.myproject .v-contextmenu .gwt-MenuItem div {
+	cursor: pointer;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.myproject .v-contextmenu .gwt-MenuItem-selected div {
+	background: #aaa;
+	color: #fff;
+}
+
+.myproject .v-contextmenu table {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+
+.myproject .v-contextmenu .gwt-MenuItem img {
+	margin-right: 1em;
+	vertical-align: middle;
+}
+
+.myproject .v-label pre {
+	margin: 0;
+}
+
+.myproject .v-label-undef-w {
+	white-space: nowrap;
+}
+
+.myproject .v-label h1, .myproject .v-label h2, .myproject .v-label h3, .myproject .v-label h4, .myproject .v-label h5, .myproject .v-label h6 {
+	line-height: normal;
+}
+
+.myproject .v-loading-indicator, .myproject .v-loading-indicator-delay, .myproject .v-loading-indicator-wait {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 30000;
+	width: 31px;
+	height: 31px;
+	background: transparent url(../base/common/img/loading-indicator.gif);
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+.myproject .v-loading-indicator-delay {
+	background-image: url(../base/common/img/loading-indicator-delay.gif);
+}
+
+.myproject .v-loading-indicator-wait {
+	background-image: url(../base/common/img/loading-indicator-wait.gif);
+}
+
+.myproject.v-app input[type="text"], .myproject.v-app input[type="password"], .myproject.v-app input[type="reset"], .myproject.v-app select, .myproject.v-app textarea, .myproject .v-window input[type="text"], .myproject .v-window input[type="password"], .myproject .v-window input[type="reset"], .myproject .v-window select, .myproject .v-window textarea {
+	padding: 2px;
+}
+
+.myproject input::-ms-clear {
+	display: none;
+}
+
+.myproject .v-drag-element {
+	z-index: 60000;
+	position: absolute !important;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	cursor: default;
+}
+
+.myproject .v-clip {
+	overflow: hidden;
+}
+
+.myproject .v-scrollable {
+	overflow: auto;
+	font-size: 0;
+	line-height: normal;
+}
+
+.v-ff .myproject .v-scrollable {
+	font-size: 13px;
+}
+
+.v-ios.v-webkit .myproject .v-scrollable {
+	-webkit-overflow-scrolling: touch;
+}
+
+.v-ios5.v-webkit .myproject .v-scrollable {
+	-webkit-overflow-scrolling: none;
+}
+
+.myproject .v-scrollable.v-panel-content > .v-widget {
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.myproject.v-overlay-container {
+	width: 0;
+	height: 0;
+}
+
+.myproject .v-reconnect-dialog {
+	color: white;
+	top: 12px;
+	right: 12px;
+	max-width: 100%;
+	border-radius: 0;
+	-webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+	padding: 10px;
+	background-color: #444;
+	text-align: center;
+}
+
+.myproject .v-reconnect-dialog .text {
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.myproject .v-reconnect-dialog .spinner {
+	background-image: url(../base/common/img/reconnect-spinner.gif);
+	width: 31px;
+	height: 31px;
+	display: none;
+	vertical-align: middle;
+}
+
+.myproject .v-reconnect-dialog.active .spinner {
+	display: inline-block;
+}
+
+.myproject .v-vertical.v-margin-top, .myproject .v-horizontal.v-margin-top {
+	padding-top: 12px;
+}
+
+.myproject .v-vertical.v-margin-right, .myproject .v-horizontal.v-margin-right {
+	padding-right: 12px;
+}
+
+.myproject .v-vertical.v-margin-bottom, .myproject .v-horizontal.v-margin-bottom {
+	padding-bottom: 12px;
+}
+
+.myproject .v-vertical.v-margin-left, .myproject .v-horizontal.v-margin-left {
+	padding-left: 12px;
+}
+
+.myproject .v-gridlayout.v-layout-margin-top {
+	padding-top: 24px;
+}
+
+.myproject .v-gridlayout, .myproject .v-verticallayout, .myproject .v-horizontallayout {
+	font-size: 0;
+	line-height: normal;
+}
+
+.myproject .v-gridlayout.v-layout-margin-bottom {
+	padding-bottom: 24px;
+}
+
+.myproject .v-gridlayout.v-layout-margin-left {
+	padding-left: 24px;
+}
+
+.myproject .v-gridlayout.v-layout-margin-right {
+	padding-right: 24px;
+}
+
+.myproject .v-gridlayout .v-layout-spacing-on {
+	padding-left: 12px;
+	padding-top: 12px;
+}
+
+.myproject .v-spacing {
+	width: 6px;
+	height: 6px;
+}
+
+.myproject .v-vertical, .myproject .v-horizontal {
+	display: inline-block;
+}
+
+.myproject div.v-layout.v-horizontal.v-widget {
+	white-space: nowrap;
+}
+
+.myproject .v-layout.v-vertical > .v-expand, .myproject .v-layout.v-horizontal > .v-expand {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+
+.myproject .v-slot, .myproject .v-spacing {
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+}
+
+.myproject .v-vertical > .v-slot:after {
+	display: inline-block;
+	clear: both;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.myproject .v-vertical > .v-slot, .myproject .v-vertical > .v-expand > .v-slot {
+	display: block;
+	clear: both;
+}
+
+.myproject .v-horizontal > .v-slot, .myproject .v-horizontal > .v-expand > .v-slot {
+	height: 100%;
+}
+
+.myproject .v-horizontal > .v-expand > .v-slot {
+	position: relative;
+}
+
+.myproject .v-vertical > .v-spacing, .myproject .v-vertical > .v-expand > .v-spacing {
+	width: 0;
+	display: block;
+	clear: both;
+}
+
+.myproject .v-horizontal > .v-spacing, .myproject .v-horizontal > .v-expand > .v-spacing {
+	height: 0;
+}
+
+.myproject .v-align-middle:before, .myproject .v-align-bottom:before, .myproject .v-expand > .v-align-middle:before, .myproject .v-expand > .v-align-bottom:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	width: 0;
+}
+
+.myproject .v-align-middle, .myproject .v-align-bottom {
+	white-space: nowrap;
+}
+
+.myproject .v-align-middle > .v-widget, .myproject .v-align-right > .v-widget, .myproject .v-align-center > .v-widget, .myproject .v-align-bottom > .v-widget {
+	display: inline-block;
+}
+
+.myproject .v-align-middle, .myproject .v-align-middle > .v-widget {
+	vertical-align: middle;
+}
+
+.myproject .v-align-bottom, .myproject .v-align-bottom > .v-widget {
+	vertical-align: bottom;
+}
+
+.myproject .v-align-center {
+	text-align: center;
+}
+
+.myproject .v-align-center > .v-widget {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.myproject .v-align-right {
+	text-align: right;
+}
+
+.myproject .v-align-right > .v-widget {
+	margin-left: auto;
+}
+
+.myproject .v-has-caption, .myproject .v-has-caption > .v-caption {
+	display: inline-block;
+}
+
+.myproject .v-caption {
+	overflow: visible;
+	vertical-align: middle;
+}
+
+.myproject .v-caption-on-left, .myproject .v-caption-on-right {
+	white-space: nowrap;
+}
+
+.myproject .v-caption-on-top > .v-caption, .myproject .v-caption-on-bottom > .v-caption {
+	display: block;
+}
+
+.myproject .v-caption-on-left > .v-caption {
+	padding-right: 0.5em;
+}
+
+.myproject .v-caption-on-right > .v-caption {
+	vertical-align: top;
+}
+
+.myproject .v-caption-on-left > .v-widget, .myproject .v-caption-on-right > .v-widget {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.myproject .v-has-caption.v-has-width > .v-widget {
+	width: 100% !important;
+}
+
+.myproject .v-has-caption.v-has-height > .v-widget {
+	height: 100% !important;
+}
+
+.myproject .v-errorindicator {
+	vertical-align: middle;
+}
+
+.myproject .v-csslayout {
+	overflow: hidden;
+}
+
+.myproject div.v-csslayout {
+	display: block;
+}
+
+.myproject .v-csslayout-margin, .myproject .v-csslayout-container {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.myproject .v-has-width > .v-csslayout-margin, .myproject .v-has-width > .v-csslayout-margin > .v-csslayout-container {
+	width: 100%;
+}
+
+.myproject .v-has-height > .v-csslayout-margin, .myproject .v-has-height > .v-csslayout-margin > .v-csslayout-container {
+	height: 100%;
+}
+
+.myproject .v-csslayout-margin-top {
+	padding-top: 12px;
+}
+
+.myproject .v-csslayout-margin-bottom {
+	padding-bottom: 12px;
+}
+
+.myproject .v-csslayout-margin-left {
+	padding-left: 12px;
+}
+
+.myproject .v-csslayout-margin-right {
+	padding-right: 12px;
+}
+
+.myproject .v-customlayout {
+	overflow: hidden;
+}
+
+.myproject .v-datefield {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.myproject .v-datefield-textfield {
+	vertical-align: top;
+}
+
+.v-ie .myproject .v-datefield-button:after {
+	content: "\200B";
+}
+
+.myproject .v-datefield-button {
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.myproject .v-has-width > input.v-datefield-textfield {
+	width: 100%;
+}
+
+.myproject .v-datefield-prompt .v-datefield-textfield {
+	color: #999;
+	font-style: italic;
+}
+
+.myproject .v-datefield .v-datefield-button-readonly {
+	display: none;
+}
+
+.myproject .v-datefield-calendarpanel table {
+	width: 100%;
+}
+
+.myproject .v-datefield-calendarpanel td {
+	padding: 0;
+	margin: 0;
+}
+
+.myproject .v-datefield-calendarpanel:focus {
+	outline: none;
+}
+
+.myproject .v-datefield-calendarpanel-header td {
+	text-align: center;
+}
+
+.myproject .v-datefield-calendarpanel-month {
+	text-align: center;
+	white-space: nowrap;
+}
+
+.myproject .v-datefield-calendarpanel-weeknumber {
+	color: #999;
+	border-right: 1px solid #ddd;
+	font-size: 11.7px;
+}
+
+.myproject .v-datefield-calendarpanel-day, .myproject .v-datefield-calendarpanel-day-today {
+	cursor: pointer;
+}
+
+.myproject .v-datefield-calendarpanel-day-today {
+	border: 1px solid #ddd;
+}
+
+.myproject .v-disabled .v-datefield-calendarpanel-day, .myproject .v-disabled .v-datefield-calendarpanel-day-today, .myproject .v-disabled.v-datefield-popupcalendar .v-datefield-button {
+	cursor: default;
+}
+
+.myproject .v-datefield-calendarpanel-day-disabled, .myproject .v-datefield-calendarpanel-day-outside-range {
+	cursor: default;
+	opacity: 0.5;
+}
+
+.myproject .v-datefield-calendarpanel-prevyear button.outside-range, .myproject .v-datefield-calendarpanel-nextyear button.outside-range, .myproject .v-datefield-calendarpanel-prevmonth button.outside-range, .myproject .v-datefield-calendarpanel-nextmonth button.outside-range {
+	opacity: 0.5;
+}
+
+.myproject .v-datefield-calendarpanel-day-selected {
+	cursor: default;
+	background: #333;
+	color: #fff;
+}
+
+.myproject .v-datefield-calendarpanel-day-focused {
+	outline: 1px dotted black;
+}
+
+.myproject .v-datefield-calendarpanel-day-offmonth {
+	color: #666;
+}
+
+.myproject .v-datefield-time {
+	white-space: nowrap;
+}
+
+.myproject .v-datefield-time .v-label {
+	display: inline;
+}
+
+.myproject .v-datefield-popup {
+	background: #fff;
+}
+
+.v-ie9 .myproject .v-datefield-popup, .v-ie10 .myproject .v-datefield-popup, .v-ie11 .myproject .v-datefield-popup {
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.myproject .v-datefield-popupcalendar input.v-datefield-textfield {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.myproject .v-inline-datefield {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.myproject .v-inline-datefield-textfield {
+	vertical-align: top;
+}
+
+.v-ie .myproject .v-inline-datefield-button:after {
+	content: "\200B";
+}
+
+.myproject .v-inline-datefield-button {
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.myproject .v-has-width > input.v-inline-datefield-textfield {
+	width: 100%;
+}
+
+.myproject .v-inline-datefield-prompt .v-inline-datefield-textfield {
+	color: #999;
+	font-style: italic;
+}
+
+.myproject .v-inline-datefield .v-inline-datefield-button-readonly {
+	display: none;
+}
+
+.myproject .v-inline-datefield-calendarpanel table {
+	width: 100%;
+}
+
+.myproject .v-inline-datefield-calendarpanel td {
+	padding: 0;
+	margin: 0;
+}
+
+.myproject .v-inline-datefield-calendarpanel:focus {
+	outline: none;
+}
+
+.myproject .v-inline-datefield-calendarpanel-header td {
+	text-align: center;
+}
+
+.myproject .v-inline-datefield-calendarpanel-month {
+	text-align: center;
+	white-space: nowrap;
+}
+
+.myproject .v-inline-datefield-calendarpanel-weeknumber {
+	color: #999;
+	border-right: 1px solid #ddd;
+	font-size: 11.7px;
+}
+
+.myproject .v-inline-datefield-calendarpanel-day, .myproject .v-inline-datefield-calendarpanel-day-today {
+	cursor: pointer;
+}
+
+.myproject .v-inline-datefield-calendarpanel-day-today {
+	border: 1px solid #ddd;
+}
+
+.myproject .v-disabled .v-inline-datefield-calendarpanel-day, .myproject .v-disabled .v-inline-datefield-calendarpanel-day-today, .myproject .v-disabled.v-inline-datefield-popupcalendar .v-inline-datefield-button {
+	cursor: default;
+}
+
+.myproject .v-inline-datefield-calendarpanel-day-disabled, .myproject .v-inline-datefield-calendarpanel-day-outside-range {
+	cursor: default;
+	opacity: 0.5;
+}
+
+.myproject .v-inline-datefield-calendarpanel-prevyear button.outside-range, .myproject .v-inline-datefield-calendarpanel-nextyear button.outside-range, .myproject .v-inline-datefield-calendarpanel-prevmonth button.outside-range, .myproject .v-inline-datefield-calendarpanel-nextmonth button.outside-range {
+	opacity: 0.5;
+}
+
+.myproject .v-inline-datefield-calendarpanel-day-selected {
+	cursor: default;
+	background: #333;
+	color: #fff;
+}
+
+.myproject .v-inline-datefield-calendarpanel-day-focused {
+	outline: 1px dotted black;
+}
+
+.myproject .v-inline-datefield-calendarpanel-day-offmonth {
+	color: #666;
+}
+
+.myproject .v-inline-datefield-time {
+	white-space: nowrap;
+}
+
+.myproject .v-inline-datefield-time .v-label {
+	display: inline;
+}
+
+.myproject .v-inline-datefield-popup {
+	background: #fff;
+}
+
+.v-ie9 .myproject .v-inline-datefield-popup, .v-ie10 .myproject .v-inline-datefield-popup, .v-ie11 .myproject .v-inline-datefield-popup {
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.myproject .v-inline-datefield-popupcalendar input.v-inline-datefield-textfield {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.myproject .v-ddwrapper {
+	padding: 2px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	position: relative;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+
+.myproject [draggable=true] {
+	-khtml-user-drag: element;
+	-webkit-user-drag: element;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+
+.v-ie .myproject .v-ddwrapper a.drag-start {
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-color: cyan;
+	filter: alpha(opacity=0);
+}
+
+.myproject .v-ddwrapper-over {
+	border: 2px solid #1d9dff;
+	background-color: #bcdcff;
+	padding: 0;
+}
+
+.myproject .v-ddwrapper-over {
+	background-color: rgba(169, 209, 255, 0.6);
+}
+
+.myproject .no-box-drag-hints .v-ddwrapper-over {
+	border: none;
+	background-color: transparent;
+	padding: 2px;
+}
+
+.myproject.v-app .v-ddwrapper-over-top, .myproject .v-window .v-ddwrapper-over-top, .myproject .v-popupview-popup .v-ddwrapper-over-top {
+	border: none;
+	border-top: 2px solid #1d9dff;
+	background-color: transparent;
+	padding: 2px;
+	padding-top: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.myproject.v-app .v-ddwrapper-over-bottom, .myproject .v-window .v-ddwrapper-over-bottom, .myproject .v-popupview-popup .v-ddwrapper-over-bottom {
+	border: none;
+	border-bottom: 2px solid #1d9dff;
+	background-color: transparent;
+	padding: 2px;
+	padding-bottom: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.myproject.v-app .v-ddwrapper-over-left, .myproject .v-window .v-ddwrapper-over-left, .myproject .v-popupview-popup .v-ddwrapper-over-left {
+	border: none;
+	border-left: 2px solid #1d9dff;
+	background-color: transparent;
+	padding: 2px;
+	padding-left: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.myproject.v-app .v-ddwrapper-over-right, .myproject .v-window .v-ddwrapper-over-right, .myproject .v-popupview-popup .v-ddwrapper-over-right {
+	border: none;
+	border-right: 2px solid #1d9dff;
+	background-color: transparent;
+	padding: 2px;
+	padding-right: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.myproject .v-ddwrapper, .myproject .v-ddwrapper-over, .myproject.v-app .v-ddwrapper-over-top, .myproject .v-window .v-ddwrapper-over-top, .myproject .v-popupview-popup .v-ddwrapper-over-top, .myproject.v-app .v-ddwrapper-over-bottom, .myproject .v-window .v-ddwrapper-over-bottom, .myproject .v-popupview-popup .v-ddwrapper-over-bottom, .myproject.v-app .v-ddwrapper-over-left, .myproject .v-window .v-ddwrapper-over-left, .myproject .v-popupview-popup .v-ddwrapper-over-left, .myproject.v-app .v-ddwrapper-over-right, .myproject .v-window .v-ddwrapper-over-right, .myproject .v-popupview-popup .v-ddwrapper-over-right {
+	border-color: rgba(0, 109, 232, 0.6);
+}
+
+.myproject .v-ddwrapper-over-top:before, .myproject .v-ddwrapper-over-bottom:after, .myproject .v-ddwrapper-over-left:before, .myproject .v-ddwrapper-over-right:before {
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	margin-top: -4px;
+	margin-left: -2px;
+	background: transparent url(../base/common/img/drag-slot-dot.png) no-repeat;
+}
+
+.myproject .v-ddwrapper-over-bottom:after {
+	margin-top: -2px;
+}
+
+.myproject .v-ddwrapper-over-left:before, .myproject .v-ddwrapper-over-right:before {
+	background-position: 0 -6px;
+	margin-top: -2px;
+	margin-left: -4px;
+}
+
+.myproject .v-ddwrapper-over-right:before {
+	position: relative;
+	margin-bottom: -4px;
+	margin-right: -4px;
+	margin-left: 0;
+	width: auto;
+	background-position: 100% -6px;
+}
+
+.myproject .no-horizontal-drag-hints .v-ddwrapper-over-left {
+	padding-left: 2px;
+	border-left: none;
+}
+
+.myproject .no-horizontal-drag-hints .v-ddwrapper-over-right {
+	padding-right: 2px;
+	border-right: none;
+}
+
+.myproject .no-vertical-drag-hints .v-ddwrapper-over-top {
+	padding-top: 2px;
+	border-top: none;
+}
+
+.myproject .no-vertical-drag-hints .v-ddwrapper-over-bottom {
+	padding-bottom: 2px;
+	border-bottom: none;
+}
+
+.myproject .no-horizontal-drag-hints .v-ddwrapper-over-left:before, .myproject .no-horizontal-drag-hints .v-ddwrapper-over-right:before, .myproject .no-vertical-drag-hints .v-ddwrapper-over-top:before, .myproject .no-vertical-drag-hints .v-ddwrapper-over-bottom:after {
+	display: none;
+}
+
+.myproject .v-table .v-embedded-image {
+	display: inline-block;
+}
+
+.myproject .v-escalator {
+	position: relative;
+}
+
+.myproject .v-escalator-scroller {
+	position: absolute;
+	z-index: 1;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.myproject .v-escalator-scroller-horizontal {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: hidden;
+	-ms-overflow-y: hidden;
+}
+
+.myproject .v-escalator-scroller-vertical {
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow-x: hidden;
+	-ms-overflow-x: hidden;
+}
+
+.myproject .v-escalator-tablewrapper {
+	position: absolute;
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 5;
+}
+
+.myproject .v-escalator-tablewrapper > table {
+	border-spacing: 0;
+	table-layout: fixed;
+	width: inherit;
+}
+
+.myproject .v-escalator-header-deco, .myproject .v-escalator-footer-deco {
+	position: absolute;
+	right: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.myproject .v-escalator-horizontal-scrollbar-deco {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.myproject .v-escalator-header, .myproject .v-escalator-body, .myproject .v-escalator-footer {
+	position: absolute;
+	left: 0;
+	width: inherit;
+	z-index: 10;
+}
+
+.myproject .v-escalator-header, .myproject .v-escalator-header-deco {
+	top: 0;
+}
+
+.myproject .v-escalator-footer, .myproject .v-escalator-footer-deco {
+	bottom: 0;
+}
+
+.myproject .v-escalator-body {
+	z-index: 0;
+	top: 0;
+}
+
+.myproject .v-escalator-body .v-escalator-row {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.myproject .v-escalator-row {
+	display: block;
+}
+
+.v-ie8 .myproject .v-escalator-row, .v-ie9 .myproject .v-escalator-row {
+	float: left;
+	clear: left;
+	margin-top: 0;
+}
+
+.myproject .v-escalator-row  > td, .myproject .v-escalator-row  > th {
+	background-color: #fff;
+}
+
+.myproject .v-escalator-row {
+	width: inherit;
+}
+
+.myproject .v-escalator-cell {
+	display: block;
+	float: left;
+	padding: 2px;
+	white-space: nowrap;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+	font-size: 13px;
+}
+
+.myproject .v-escalator-cell.frozen {
+	position: relative;
+	z-index: 1;
+}
+
+.myproject .v-escalator-spacer {
+	position: absolute;
+	display: block;
+	background-color: #fff;
+}
+
+.myproject .v-escalator-spacer  > td {
+	width: 100%;
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.v-ie8 .myproject .v-escalator-spacer, .v-ie9 .myproject .v-escalator-spacer {
+	margin-top: 0;
+}
+
+.myproject .v-formlayout.v-has-width > table {
+	width: 100%;
+}
+
+.myproject .v-formlayout.v-has-height > table {
+	height: 100%;
+}
+
+.myproject .v-formlayout-cell .v-errorindicator {
+	display: block;
+}
+
+.myproject .v-formlayout-error-indicator {
+	width: 12px;
+}
+
+.myproject .v-formlayout-captioncell {
+	text-align: right;
+	white-space: nowrap;
+}
+
+.myproject .v-formlayout-errorcell, .myproject .v-formlayout-captioncell {
+	width: 1px;
+	min-width: 1px;
+}
+
+.myproject .v-formlayout-captioncell .v-caption {
+	overflow: visible;
+}
+
+.myproject .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-captioncell, .myproject .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-contentcell, .myproject .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-errorcell {
+	padding-top: 6px;
+}
+
+.myproject .v-formlayout-spacing > tbody > .v-formlayout-firstrow > .v-formlayout-captioncell, .myproject .v-formlayout-spacing > tbody > .v-formlayout-firstrow > .v-formlayout-contentcell, .myproject .v-formlayout-spacing > tbody > .v-formlayout-firstrow > .v-formlayout-errorcell {
+	padding-top: 0;
+}
+
+.myproject .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-captioncell, .myproject .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-contentcell, .myproject .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-errorcell {
+	padding-top: 12px;
+}
+
+.myproject .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-captioncell, .myproject .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-contentcell, .myproject .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-errorcell {
+	padding-bottom: 12px;
+}
+
+.myproject .v-formlayout-margin-left > tbody > .v-formlayout-row > .v-formlayout-captioncell {
+	padding-left: 12px;
+}
+
+.myproject .v-formlayout-margin-right > tbody > .v-formlayout-row > .v-formlayout-contentcell {
+	padding-right: 12px;
+}
+
+.myproject .v-formlayout-captioncell .v-caption .v-required-field-indicator {
+	float: none;
+}
+
+.myproject .v-grid {
+	position: relative;
+}
+
+.myproject .v-grid-scroller {
+	position: absolute;
+	z-index: 1;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.myproject .v-grid-scroller-horizontal {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: hidden;
+	-ms-overflow-y: hidden;
+}
+
+.myproject .v-grid-scroller-vertical {
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow-x: hidden;
+	-ms-overflow-x: hidden;
+}
+
+.myproject .v-grid-tablewrapper {
+	position: absolute;
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 5;
+}
+
+.myproject .v-grid-tablewrapper > table {
+	border-spacing: 0;
+	table-layout: fixed;
+	width: inherit;
+}
+
+.myproject .v-grid-header-deco, .myproject .v-grid-footer-deco {
+	position: absolute;
+	right: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.myproject .v-grid-horizontal-scrollbar-deco {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.myproject .v-grid-header, .myproject .v-grid-body, .myproject .v-grid-footer {
+	position: absolute;
+	left: 0;
+	width: inherit;
+	z-index: 10;
+}
+
+.myproject .v-grid-header, .myproject .v-grid-header-deco {
+	top: 0;
+}
+
+.myproject .v-grid-footer, .myproject .v-grid-footer-deco {
+	bottom: 0;
+}
+
+.myproject .v-grid-body {
+	z-index: 0;
+	top: 0;
+}
+
+.myproject .v-grid-body .v-grid-row {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.myproject .v-grid-row {
+	display: block;
+}
+
+.v-ie8 .myproject .v-grid-row, .v-ie9 .myproject .v-grid-row {
+	float: left;
+	clear: left;
+	margin-top: 0;
+}
+
+.myproject .v-grid-row  > td, .myproject .v-grid-row  > th {
+	background-color: #fff;
+}
+
+.myproject .v-grid-row {
+	width: inherit;
+}
+
+.myproject .v-grid-cell {
+	display: block;
+	float: left;
+	padding: 2px;
+	white-space: nowrap;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+	font-size: 13px;
+}
+
+.myproject .v-grid-cell.frozen {
+	position: relative;
+	z-index: 1;
+}
+
+.myproject .v-grid-spacer {
+	position: absolute;
+	display: block;
+	background-color: #fff;
+}
+
+.myproject .v-grid-spacer  > td {
+	width: 100%;
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.v-ie8 .myproject .v-grid-spacer, .v-ie9 .myproject .v-grid-spacer {
+	margin-top: 0;
+}
+
+.myproject .v-grid {
+	outline: none;
+}
+
+.myproject .v-grid-scroller-vertical, .myproject .v-grid-scroller-horizontal {
+	border: 1px solid #ddd;
+}
+
+.myproject .v-grid-scroller-vertical {
+	border-left: none;
+}
+
+.myproject .v-grid-scroller-horizontal {
+	border-top: none;
+}
+
+.myproject .v-grid-tablewrapper {
+	border: 1px solid #ddd;
+}
+
+.myproject .v-grid .header-drag-table {
+	border-spacing: 0;
+	position: relative;
+	table-layout: fixed;
+	width: inherit;
+}
+
+.myproject .v-grid .header-drag-table .v-grid-header {
+	position: absolute;
+}
+
+.myproject .v-grid .header-drag-table .v-grid-header  > .v-grid-cell {
+	border: 1px solid #ddd;
+	margin-top: -10px;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	z-index: 30000;
+}
+
+.myproject .v-grid .header-drag-table .v-grid-header  > .v-grid-drop-marker {
+	background-color: #bfbfbf;
+	position: absolute;
+	width: 3px;
+}
+
+.myproject .v-grid-sidebar.v-contextmenu {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-radius: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 0;
+	z-index: 5;
+}
+
+.myproject .v-grid-sidebar.v-contextmenu.v-grid-sidebar-popup {
+	right: auto;
+}
+
+.myproject .v-grid-sidebar.v-contextmenu .v-grid-sidebar-button {
+	background: transparent;
+	border: none;
+	color: inherit;
+	cursor: pointer;
+	outline: none;
+	padding: 0 4px;
+	text-align: right;
+	line-height: 1;
+}
+
+.myproject .v-grid-sidebar.v-contextmenu .v-grid-sidebar-button[disabled] {
+	cursor: default;
+}
+
+.myproject .v-grid-sidebar.v-contextmenu .v-grid-sidebar-button::-moz-focus-inner {
+	border: 0;
+}
+
+.myproject .v-grid-sidebar.v-contextmenu .v-grid-sidebar-button:after {
+	content: "\f0c9";
+	display: block;
+	font-family: ThemeIcons, sans-serif;
+	font-size: 13px;
+}
+
+.myproject .v-grid-sidebar.v-contextmenu.closed {
+	border-radius: 0;
+}
+
+.myproject .v-grid-sidebar.v-contextmenu.open .v-grid-sidebar-button {
+	width: 100%;
+}
+
+.myproject .v-grid-sidebar.v-contextmenu.open .v-grid-sidebar-button:after {
+	content: "\f0c9";
+	font-size: 13px;
+	line-height: 1;
+}
+
+.v-ie .myproject .v-grid-sidebar.v-contextmenu.open .v-grid-sidebar-button {
+	vertical-align: middle;
+}
+
+.v-ie8 .myproject .v-grid-sidebar.v-contextmenu.open .v-grid-sidebar-button:after {
+	vertical-align: middle;
+	text-align: center;
+	display: inline;
+}
+
+.myproject .v-grid-sidebar.v-contextmenu .v-grid-sidebar-content {
+	padding: 4px 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.myproject .v-grid-sidebar.v-contextmenu .v-grid-sidebar-content .gwt-MenuBar .gwt-MenuItem .column-hiding-toggle {
+	text-shadow: none;
+}
+
+.myproject .v-grid-cell {
+	background-color: #fff;
+	padding: 0 10px;
+	line-height: 20px;
+	text-overflow: ellipsis;
+}
+
+.myproject .v-grid-cell  > * {
+	line-height: 1.4;
+	vertical-align: middle;
+}
+
+.myproject .v-grid-cell  > div {
+	display: inline-block;
+}
+
+.myproject .v-grid-cell.frozen {
+	-webkit-box-shadow: 1px 0 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 1px 0 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 1px 0 2px rgba(0, 0, 0, 0.1);
+	border-right: 1px solid #ddd;
+}
+
+.myproject .v-grid-cell.frozen  + th, .myproject .v-grid-cell.frozen  + td {
+	border-left: none;
+}
+
+.myproject .v-grid-row > td, .myproject .v-grid-editor-cells > div {
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.myproject .v-grid-row > td:first-child, .myproject .v-grid-editor-cells > div:first-child {
+	border-left: none;
+}
+
+.myproject .v-grid-editor-cells.frozen > div {
+	-webkit-box-shadow: 1px 0 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 1px 0 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 1px 0 2px rgba(0, 0, 0, 0.1);
+	border-right: 1px solid #ddd;
+	border-left: none;
+}
+
+.myproject .v-grid-row-stripe > td {
+	background-color: #f2f2f2;
+}
+
+.myproject .v-grid-row-selected > td {
+	background: #bfbfbf;
+}
+
+.myproject .v-grid-row-focused > td {
+	
+}
+
+.myproject .v-grid-header th {
+	position: relative;
+	background-color: #fff;
+	font-size: 13px;
+	font-weight: inherit;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	
+	text-align: left;
+}
+
+.myproject .v-grid-header th:first-child {
+	border-left: none;
+}
+
+.myproject .v-grid-header .sort-asc, .myproject .v-grid-header .sort-desc {
+	padding-right: 26px;
+}
+
+.myproject .v-grid-header .sort-asc:after, .myproject .v-grid-header .sort-desc:after {
+	font-family: ThemeIcons, sans-serif;
+	content: "\f0de" " " attr(sort-order);
+	position: absolute;
+	right: 10px;
+	font-size: 11px;
+}
+
+.myproject .v-grid-header .sort-desc:after {
+	content: "\f0dd" " " attr(sort-order);
+}
+
+.myproject .v-grid-column-resize-handle {
+	position: absolute;
+	width: 20px;
+	right: -10px;
+	top: 0px;
+	bottom: 0px;
+	cursor: col-resize;
+	z-index: 10;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.myproject .v-grid-footer td {
+	background-color: #fff;
+	font-size: 13px;
+	font-weight: inherit;
+	border-left: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	border-bottom: none;
+	
+}
+
+.myproject .v-grid-footer td:first-child {
+	border-left: none;
+}
+
+.myproject .v-grid-header .v-grid-cell, .myproject .v-grid-footer .v-grid-cell {
+	overflow: visible;
+}
+
+.myproject .v-grid-column-header-content, .myproject .v-grid-column-footer-content {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 20px;
+	vertical-align: baseline;
+}
+
+.myproject .v-grid-header-deco {
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	background-color: #fff;
+}
+
+.myproject .v-grid-footer-deco {
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	background-color: #fff;
+}
+
+.myproject .v-grid-horizontal-scrollbar-deco {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-top: none;
+}
+
+.myproject .v-grid-cell-focused {
+	position: relative;
+}
+
+.myproject .v-grid-cell-focused:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border: 1px solid;
+	display: none;
+	pointer-events: none;
+}
+
+.ie8 .myproject .v-grid-cell-focused:before, .ie9 .myproject .v-grid-cell-focused:before, .ie10 .myproject .v-grid-cell-focused:before {
+	content: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==);
+}
+
+.myproject .v-grid:focus .v-grid-cell-focused:before {
+	display: block;
+}
+
+.myproject .v-grid.v-disabled:focus .v-grid-cell-focused:before {
+	display: none;
+}
+
+.myproject .v-grid-editor {
+	position: absolute;
+	z-index: 20;
+	overflow: hidden;
+	left: 0;
+	right: 0;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin-top: -1px;
+	-webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
+}
+
+.myproject .v-grid-editor.unbuffered .v-grid-editor-footer {
+	width: 100%;
+}
+
+.myproject .v-grid-editor-cells {
+	position: relative;
+	white-space: nowrap;
+}
+
+.myproject .v-grid-editor-cells.frozen {
+	z-index: 2;
+}
+
+.myproject .v-grid-editor-cells  > div {
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	vertical-align: middle;
+	background: #fff;
+}
+
+.myproject .v-grid-editor-cells  > div:first-child {
+	border-left: none;
+}
+
+.myproject .v-grid-editor-cells  > div  > * {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.myproject .v-grid-editor-cells  > div .v-filterselect {
+	padding-left: 0;
+}
+
+.myproject .v-grid-editor-cells  > div input[type="text"], .myproject .v-grid-editor-cells  > div input[type="text"].v-filterselect-input, .myproject .v-grid-editor-cells  > div input[type="password"] {
+	padding-left: 10px;
+}
+
+.myproject .v-grid-editor-cells  > div input[type="text"]:not(.v-filterselect-input), .myproject .v-grid-editor-cells  > div input[type="password"] {
+	padding-right: 5px;
+}
+
+.myproject .v-grid-editor-cells  > div input[type="checkbox"] {
+	margin-left: 10px;
+}
+
+.myproject .v-grid-editor-cells  > div .v-textfield, .myproject .v-grid-editor-cells  > div .v-datefield, .myproject .v-grid-editor-cells  > div .v-filterselect {
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	max-height: 100%;
+}
+
+.v-ie8 .myproject .v-grid-editor-cells  > div .v-datefield-button {
+	margin-left: -37px;
+}
+
+.v-ie8 .myproject .v-grid-editor-cells  > div .v-filterselect-button {
+	margin-left: -25px;
+}
+
+.myproject .v-grid-editor-cells  > div .v-select, .myproject .v-grid-editor-cells  > div .v-select-select {
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.myproject .v-grid-editor-cells  > div.not-editable.v-grid-cell {
+	float: none;
+}
+
+.myproject .v-grid-editor-cells .error::before {
+	position: absolute;
+	display: block;
+	height: 0;
+	width: 0;
+	content: "";
+	border-top: 5px solid red;
+	border-right: 5px solid transparent;
+}
+
+.myproject .v-grid-editor-cells .error, .myproject .v-grid-editor-cells .error > input {
+	background-color: #fee;
+}
+
+.myproject .v-grid-editor-footer {
+	display: table;
+	height: 20px;
+	border-top: 1px solid #ddd;
+	margin-top: -1px;
+	background: #fff;
+	padding: 0 5px;
+}
+
+.myproject .v-grid-editor-footer  + .v-grid-editor-cells > div {
+	border-bottom: none;
+	border-top: 1px solid #ddd;
+}
+
+.myproject .v-grid-editor-footer:first-child {
+	border-top: none;
+	margin-top: 0;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: -1px;
+}
+
+.myproject .v-grid-editor-message, .myproject .v-grid-editor-buttons {
+	display: table-cell;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.myproject .v-grid-editor-message {
+	width: 100%;
+	position: relative;
+}
+
+.myproject .v-grid-editor-message  > div {
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 20px;
+	top: 0;
+}
+
+.myproject .v-grid-editor-save {
+	margin-right: 4px;
+}
+
+.myproject .v-grid-spacer {
+	padding-left: 1px;
+}
+
+.myproject .v-grid-spacer > td {
+	display: block;
+	padding: 0;
+	background-color: #fff;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.myproject .v-grid-spacer.stripe > td {
+	background-color: #f2f2f2;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.myproject .v-grid-spacer-deco-container {
+	border-top: 1px solid transparent;
+	position: relative;
+	top: 0;
+	z-index: 5;
+}
+
+.myproject .v-grid-spacer-deco {
+	top: 0;
+	left: 0;
+	width: 2px;
+	background-color: #bfbfbf;
+	position: absolute;
+	height: 100%;
+	pointer-events: none;
+}
+
+.ie8 .myproject .v-grid-spacer-deco:before, .ie9 .myproject .v-grid-spacer-deco:before, .ie10 .myproject .v-grid-spacer-deco:before {
+	content: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==);
+}
+
+.myproject .v-grid-cell > .v-progressbar {
+	width: 100%;
+}
+
+.myproject .v-gridlayout {
+	position: relative;
+}
+
+.myproject .v-gridlayout-slot {
+	position: absolute;
+}
+
+.myproject .v-gridlayout-margin-top {
+	padding-top: 12px;
+}
+
+.myproject .v-gridlayout-margin-bottom {
+	padding-bottom: 12px;
+}
+
+.myproject .v-gridlayout-margin-left {
+	padding-left: 12px;
+}
+
+.myproject .v-gridlayout-margin-right {
+	padding-right: 12px;
+}
+
+.myproject .v-gridlayout-spacing-on {
+	padding-left: 6px;
+	padding-top: 6px;
+	overflow: hidden;
+}
+
+.myproject .v-gridlayout-spacing, .myproject .v-gridlayout-spacing-off {
+	padding-left: 0;
+	padding-top: 0;
+}
+
+.myproject .v-gridlayout-spacing-off {
+	overflow: hidden;
+}
+
+.myproject .v-label {
+	overflow: hidden;
+}
+
+.myproject .v-label.v-has-width {
+	white-space: normal;
+}
+
+.myproject .v-link {
+	white-space: nowrap;
+}
+
+.myproject .v-link a {
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.myproject .v-link span {
+	text-decoration: underline;
+	vertical-align: middle;
+}
+
+.myproject .v-disabled a {
+	cursor: default;
+}
+
+.myproject .v-link img {
+	vertical-align: middle;
+	border: none;
+}
+
+.myproject .v-loginform {
+	height: 140px;
+	width: 200px;
+}
+
+.myproject .v-app-loginpage .v-button {
+	float: left;
+}
+
+.myproject .v-menubar {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.myproject .v-menubar .v-menubar-menuitem {
+	cursor: default;
+	vertical-align: middle;
+	white-space: nowrap;
+	display: inline;
+	display: inline-block;
+	zoom: 1;
+}
+
+.myproject .v-menubar .v-menubar-menuitem-caption .v-icon {
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.myproject .v-menubar-submenu {
+	background: #fff;
+}
+
+.myproject .v-menubar-menuitem-selected {
+	background: #333;
+	color: #fff;
+}
+
+.myproject .v-menubar-submenu .v-menubar-menuitem {
+	cursor: default;
+	display: block;
+	position: relative;
+	padding-right: 1.5em;
+}
+
+.myproject .v-menubar-submenu .v-menubar-menuitem-caption {
+	display: block;
+}
+
+.myproject .v-menubar-submenu .v-menubar-menuitem *, .myproject .v-menubar-submenu .v-menubar-menuitem-caption * {
+	white-space: nowrap;
+}
+
+.myproject .v-menubar-submenu-indicator {
+	display: none;
+	font-family: arial, helvetica, sans-serif;
+}
+
+.myproject .v-menubar-submenu .v-menubar-submenu-indicator {
+	display: block;
+	position: absolute;
+	right: 0;
+	width: 1em;
+	height: 1em;
+	font-size: 11.7px;
+}
+
+.myproject .v-menubar-menuitem-disabled, .myproject .v-menubar span.v-menubar-menuitem-disabled:hover, .myproject .v-menubar span.v-menubar-menuitem-disabled:focus, .myproject .v-menubar span.v-menubar-menuitem-disabled:active {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+.v-ie8 .myproject .v-menubar-menuitem-disabled, .v-ie8 .myproject .v-menubar span.v-menubar-menuitem-disabled:hover, .v-ie8 .myproject .v-menubar span.v-menubar-menuitem-disabled:focus, .v-ie8 .myproject .v-menubar span.v-menubar-menuitem-disabled:active {
+	filter: none;
+	color: #999;
+}
+
+.v-ie8 .myproject .v-menubar-menuitem-disabled img, .v-ie8 .myproject .v-menubar span.v-menubar-menuitem-disabled:hover img, .v-ie8 .myproject .v-menubar span.v-menubar-menuitem-disabled:focus img, .v-ie8 .myproject .v-menubar span.v-menubar-menuitem-disabled:active img {
+	filter: alpha(opacity=50);
+}
+
+.myproject .v-menubar-more-menuitem {
+	font-family: arial, helvetica, sans-serif;
+}
+
+.myproject .v-menubar-separator {
+	overflow: hidden;
+}
+
+.myproject .v-menubar-separator span {
+	display: block;
+	text-indent: -9999px;
+	font-size: 1px;
+	line-height: 1px;
+	border-top: 1px solid #ddd;
+	margin: 3px 0 2px;
+	overflow: hidden;
+}
+
+.myproject .v-menubar .v-icon, .myproject .v-menubar-submenu .v-icon {
+	margin-right: 3px;
+}
+
+.myproject .v-menubar:focus, .myproject .v-menubar-popup:focus, .myproject .v-menubar-popup .popupContent:focus, .myproject .v-menubar-popup .popupContent .v-menubar-submenu:focus {
+	outline: none;
+}
+
+.myproject .v-menubar-submenu-check-column .v-menubar-menuitem {
+	padding-left: 6px;
+}
+
+.myproject .v-menubar-submenu-check-column .v-menubar-menuitem-caption {
+	padding-left: 18px;
+}
+
+.myproject .v-menubar-submenu .v-menubar-menuitem-checked .v-menubar-menuitem-caption {
+	background: transparent url(../base/menubar/img/check.gif) no-repeat left;
+}
+
+.myproject .v-Notification {
+	background: #999;
+	color: #fff;
+	cursor: pointer;
+	overflow: hidden;
+	padding: 1em;
+	max-width: 85%;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+
+.myproject .v-Notification-caption, .myproject .v-Notification-description, .myproject .v-Notification-details {
+	display: inline;
+	margin: 0 0.5em 0 0;
+}
+
+.myproject .v-Notification-warning {
+	background: orange;
+}
+
+.myproject .v-Notification-error {
+	background: red;
+}
+
+.myproject .v-Notification-tray .v-Notification-caption, .myproject .v-Notification-tray .v-Notification-description {
+	display: block;
+}
+
+.myproject .v-Notification-system {
+	background-color: red;
+}
+
+.myproject .v-Notification-system .v-Notification-caption {
+	display: block;
+	margin: 0;
+}
+
+.myproject .v-Notification-animate-out {
+	-webkit-animation: v-notification-animate-out 400ms;
+	-moz-animation: v-notification-animate-out 400ms;
+	animation: v-notification-animate-out 400ms;
+}
+
+.myproject .v-Notification.v-position-top {
+	top: 0;
+}
+
+.myproject .v-Notification.v-position-right {
+	right: 0;
+}
+
+.myproject .v-Notification.v-position-bottom {
+	bottom: 0;
+}
+
+.myproject .v-Notification.v-position-left {
+	left: 0;
+}
+
+.myproject .v-Notification.v-position-assistive {
+	top: -9999px;
+	left: -9999px;
+}
+
+.myproject .v-orderedlayout, .myproject .v-horizontallayout, .myproject .v-verticallayout {
+	position: relative;
+}
+
+.myproject .v-orderedlayout-margin-top, .myproject .v-horizontallayout-margin-top, .myproject .v-verticallayout-margin-top {
+	padding-top: 12px;
+}
+
+.myproject .v-orderedlayout-margin-right, .myproject .v-horizontallayout-margin-right, .myproject .v-verticallayout-margin-right {
+	padding-right: 12px;
+}
+
+.myproject .v-orderedlayout-margin-bottom, .myproject .v-horizontallayout-margin-bottom, .myproject .v-verticallayout-margin-bottom {
+	padding-bottom: 12px;
+}
+
+.myproject .v-orderedlayout-margin-left, .myproject .v-horizontallayout-margin-left, .myproject .v-verticallayout-margin-left {
+	padding-left: 12px;
+}
+
+.myproject .v-orderedlayout-spacing-on, .myproject .v-horizontallayout-spacing-on, .myproject .v-verticallayout-spacing-on {
+	padding-top: 6px;
+	padding-left: 6px;
+}
+
+.myproject .v-orderedlayout-spacing-off, .myproject .v-horizontallayout-spacing-off, .myproject .v-verticallayout-spacing-off {
+	padding-top: 0;
+	padding-left: 0;
+}
+
+.myproject .v-horizontallayout-slot, .myproject .v-verticallayout-slot {
+	position: absolute;
+}
+
+.myproject .v-panel, .myproject .v-panel-caption, .myproject .v-panel-content, .myproject .v-panel-deco, .myproject .v-panel-light, .myproject .v-panel-caption-light, .myproject .v-panel-content-light, .myproject .v-panel-deco-light {
+	outline: none;
+	text-align: left;
+}
+
+.myproject .v-panel-caption .v-errorindicator {
+	float: none;
+	display: inline;
+}
+
+.myproject .v-panel-caption .v-icon {
+	display: inline;
+	vertical-align: middle;
+}
+
+.myproject .v-panel-caption span {
+	vertical-align: middle;
+}
+
+.myproject .v-panel-caption {
+	white-space: nowrap;
+	overflow: hidden;
+	font-weight: bold;
+}
+
+.myproject .v-panel-nocaption {
+	overflow: hidden;
+}
+
+.myproject .v-panel-content {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.myproject .v-panel.v-has-width > .v-panel-content {
+	width: 100%;
+}
+
+.myproject .v-panel.v-has-height > .v-panel-content {
+	height: 100%;
+}
+
+.myproject .v-popupview {
+	cursor: pointer;
+	text-decoration: underline;
+	white-space: nowrap;
+}
+
+.myproject .v-popupview-popup {
+	overflow: auto;
+}
+
+.myproject .v-popupview-loading {
+	width: 30px;
+	height: 30px;
+	background: transparent url(../base/common/img/ajax-loader-medium.gif) no-repeat 50%;
+}
+
+.myproject .v-progressbar {
+	width: 150px;
+}
+
+.myproject .v-progressbar-wrapper {
+	height: 7px;
+	border: 1px solid #ddd;
+}
+
+.myproject .v-progressbar-indicator {
+	height: 7px;
+	background: #ddd;
+}
+
+.myproject div.v-progressbar-indeterminate {
+	height: 20px;
+	width: 20px;
+	background: #fff url(../base/common/img/ajax-loader-medium.gif) no-repeat 50%;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.myproject .v-progressbar-indeterminate .v-progressbar-wrapper, .myproject .v-progressbar-indeterminate .v-progressbar-indicator, .myproject .v-progressbar-indeterminate-disabled .v-progressbar-wrapper, .myproject .v-progressbar-indeterminate-disabled .v-progressbar-indicator {
+	display: none;
+}
+
+.myproject div.v-progressbar-indeterminate-disabled {
+	height: 20px;
+	width: 20px;
+	background: transparent;
+}
+
+.myproject .v-progressindicator {
+	width: 150px;
+}
+
+.myproject .v-progressindicator-wrapper {
+	height: 7px;
+	border: 1px solid #ddd;
+}
+
+.myproject .v-progressindicator-indicator {
+	height: 7px;
+	background: #ddd;
+}
+
+.myproject div.v-progressindicator-indeterminate {
+	height: 20px;
+	width: 20px;
+	background: #fff url(../base/common/img/ajax-loader-medium.gif) no-repeat 50%;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.myproject .v-progressindicator-indeterminate .v-progressindicator-wrapper, .myproject .v-progressindicator-indeterminate .v-progressindicator-indicator, .myproject .v-progressindicator-indeterminate-disabled .v-progressindicator-wrapper, .myproject .v-progressindicator-indeterminate-disabled .v-progressindicator-indicator {
+	display: none;
+}
+
+.myproject div.v-progressindicator-indeterminate-disabled {
+	height: 20px;
+	width: 20px;
+	background: transparent;
+}
+
+.myproject .v-select {
+	text-align: left;
+}
+
+.myproject .v-select-optiongroup .v-select-option {
+	display: block;
+	white-space: nowrap;
+}
+
+.myproject .v-select-optiongroup .v-icon {
+	vertical-align: middle;
+	white-space: nowrap;
+	margin: 0 2px;
+}
+
+.v-ie .myproject .v-select-optiongroup .v-select-option {
+	zoom: 1;
+}
+
+.myproject .v-select-select {
+	display: block;
+}
+
+.myproject .v-select-twincol {
+	white-space: nowrap;
+}
+
+.myproject .v-select-twincol-options {
+	float: left;
+}
+
+.myproject .v-select-twincol-caption-left {
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.myproject .v-select-twincol-selections {
+	font-weight: bold;
+}
+
+.myproject .v-select-twincol-caption-right {
+	float: right;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.myproject .v-select-twincol-buttons {
+	float: left;
+	text-align: center;
+}
+
+.myproject .v-select-twincol-buttons .v-select-twincol-deco {
+	clear: both;
+}
+
+.myproject .v-select-twincol .v-textfield {
+	display: block;
+	float: left;
+	clear: left;
+}
+
+.myproject .v-select-twincol .v-button {
+	float: left;
+}
+
+.myproject .v-select-twincol-buttons .v-button {
+	float: none;
+}
+
+.myproject .v-filterselect {
+	white-space: nowrap;
+	text-align: left;
+	display: inline-block;
+	padding-right: 1em;
+}
+
+.myproject .v-filterselect .v-icon {
+	float: left;
+}
+
+.myproject.v-app .v-filterselect-input, .myproject .v-window .v-filterselect-input, .myproject .v-popupview-popup .v-filterselect-input {
+	margin: 0;
+	float: left;
+	-webkit-border-radius: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.myproject .v-filterselect-prompt .v-filterselect-input {
+	color: #999;
+	font-style: italic;
+}
+
+.myproject .v-filterselect-button {
+	display: inline-block;
+	cursor: pointer;
+	width: 1em;
+	margin-right: -1em;
+	height: 1em;
+	background: transparent url(../base/common/img/sprites.png) no-repeat -5px -8px;
+}
+
+.myproject .v-filterselect.v-readonly .v-filterselect-button {
+	display: none;
+}
+
+.myproject .v-filterselect.v-readonly, .myproject .v-filterselect.v-readonly .v-filterselect-input {
+	background: transparent;
+}
+
+.myproject .v-filterselect-suggestpopup {
+	background: #fff;
+	border: 1px solid #eee;
+}
+
+.myproject .v-filterselect-suggestmenu table {
+	border-collapse: collapse;
+	border: none;
+	vertical-align: top;
+}
+
+.myproject .v-filterselect-suggestmenu .gwt-MenuItem {
+	white-space: nowrap;
+}
+
+.myproject .v-filterselect-suggestmenu .gwt-MenuItem .v-icon {
+	margin-right: 3px;
+	vertical-align: middle;
+}
+
+.myproject .v-filterselect-suggestmenu .gwt-MenuItem span {
+	vertical-align: middle;
+}
+
+.myproject .v-filterselect-suggestmenu .gwt-MenuItem-selected {
+	background: #333;
+	color: #fff;
+}
+
+.myproject .v-filterselect-nextpage, .myproject .v-filterselect-nextpage-off, .myproject .v-filterselect-prevpage-off, .myproject .v-filterselect-prevpage {
+	width: 100%;
+	background: #aaa;
+	text-align: center;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.myproject .v-filterselect-nextpage-off, .myproject .v-filterselect-prevpage-off {
+	color: #666;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	cursor: default;
+}
+
+.myproject .v-filterselect-nextpage-off span, .myproject .v-filterselect-prevpage-off span {
+	cursor: default;
+}
+
+.myproject .v-filterselect-status {
+	white-space: nowrap;
+	text-align: center;
+}
+
+.myproject .v-filterselect-no-input .v-filterselect-input {
+	cursor: default;
+}
+
+.myproject .v-shadow {
+	position: absolute;
+	display: none;
+	pointer-events: none;
+}
+
+.v-ie8 .myproject .v-shadow {
+	display: block;
+}
+
+.myproject .v-shadow .top-left {
+	position: absolute;
+	overflow: hidden;
+	top: -3px;
+	left: -5px;
+	width: 10px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/top-left.png);
+}
+
+.myproject .v-shadow .top {
+	position: absolute;
+	overflow: hidden;
+	top: -3px;
+	left: 5px;
+	height: 10px;
+	right: 5px;
+	background: transparent url(../base/shadow/img/top.png);
+}
+
+.myproject .v-shadow .top-right {
+	position: absolute;
+	overflow: hidden;
+	top: -3px;
+	right: -5px;
+	width: 10px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/top-right.png);
+}
+
+.myproject .v-shadow .left {
+	position: absolute;
+	overflow: hidden;
+	top: 7px;
+	left: -5px;
+	width: 10px;
+	bottom: 3px;
+	background: transparent url(../base/shadow/img/left.png);
+}
+
+.myproject .v-shadow .center {
+	position: absolute;
+	overflow: hidden;
+	top: 7px;
+	left: 5px;
+	bottom: 3px;
+	right: 5px;
+	background: transparent url(../base/shadow/img/center.png);
+}
+
+.myproject .v-shadow .right {
+	position: absolute;
+	overflow: hidden;
+	top: 7px;
+	right: -5px;
+	width: 10px;
+	bottom: 3px;
+	background: transparent url(../base/shadow/img/right.png);
+}
+
+.myproject .v-shadow .bottom-left {
+	position: absolute;
+	overflow: hidden;
+	bottom: -7px;
+	left: -5px;
+	width: 10px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/bottom-left.png);
+}
+
+.myproject .v-shadow .bottom {
+	position: absolute;
+	overflow: hidden;
+	bottom: -7px;
+	left: 5px;
+	right: 5px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/bottom.png);
+}
+
+.myproject .v-shadow .bottom-right {
+	position: absolute;
+	overflow: hidden;
+	bottom: -7px;
+	right: -5px;
+	width: 10px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/bottom-right.png);
+}
+
+.myproject .v-slider {
+	margin: 5px 0;
+}
+
+.myproject .v-slider-base {
+	height: 2px;
+	border-top: 1px solid #ddd;
+	background: #eee;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #eee;
+}
+
+.myproject .v-slider-handle {
+	background: #aaa;
+	width: 12px;
+	height: 12px;
+	margin-top: -5px;
+	font-size: 0;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+
+.myproject .v-slider-vertical {
+	width: 2px;
+	height: auto;
+	margin: 0 5px;
+	border: none;
+	border-left: 1px solid #cccfd0;
+	border-right: 1px solid #cccfd0;
+}
+
+.myproject .v-slider-vertical .v-slider-base {
+	width: 2px;
+	border-bottom: 1px solid #eee;
+	border-right: none;
+}
+
+.myproject .v-slider-vertical .v-slider-handle {
+	width: 12px;
+	height: 12px;
+	font-size: 0;
+	margin-left: -5px;
+}
+
+.myproject .v-slider-feedback {
+	padding: 2px 5px;
+	background: #444;
+	color: #fff;
+	font-size: 11px;
+	line-height: 13px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	margin: -2px 0 0 2px;
+	text-shadow: 0 1px 0 #000;
+}
+
+.myproject .v-splitpanel-horizontal, .myproject .v-splitpanel-vertical {
+	overflow: hidden;
+}
+
+.myproject .v-splitpanel-hsplitter {
+	width: 6px;
+}
+
+.myproject .v-splitpanel-hsplitter div {
+	width: 6px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background: #ddd;
+	cursor: e-resize;
+	cursor: col-resize;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+
+.myproject .v-disabled .v-splitpanel-hsplitter div {
+	cursor: default;
+}
+
+.myproject .v-splitpanel-vsplitter {
+	height: 6px;
+}
+
+.myproject .v-splitpanel-vsplitter div {
+	height: 6px;
+	background: #ddd;
+	cursor: s-resize;
+	cursor: row-resize;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+
+.myproject .v-disabled .v-splitpanel-vsplitter div {
+	cursor: default;
+}
+
+.myproject .v-table {
+	overflow: hidden;
+	text-align: left;
+}
+
+.myproject .v-table-header-wrap {
+	overflow: hidden;
+	border: 1px solid #aaa;
+	border-bottom: none;
+	background: #efefef;
+}
+
+.myproject .v-table-header table, .myproject .v-table-table {
+	border-spacing: 0;
+	border-collapse: separate;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.myproject .v-table-table {
+	font-size: 13px;
+}
+
+.myproject .v-table-header td {
+	padding: 0;
+}
+
+.myproject .v-table-header-cell, .myproject .v-table-header-cell-asc, .myproject .v-table-header-cell-desc {
+	cursor: pointer;
+}
+
+.myproject .v-table.v-disabled .v-table-header-cell, .myproject .v-table.v-disabled .v-table-header-cell-asc, .myproject .v-table.v-disabled .v-table-header-cell-desc {
+	cursor: default;
+}
+
+.myproject .v-table-footer-wrap {
+	overflow: hidden;
+	border: 1px solid #aaa;
+	border-top: none;
+	background: #efefef;
+}
+
+.myproject .v-table-footer table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.myproject .v-table-footer td {
+	padding: 0;
+	border-right: 1px solid #aaa;
+}
+
+.myproject .v-table-footer-cell {
+	cursor: pointer;
+}
+
+.myproject .v-table-footer-container {
+	float: right;
+	padding-right: 6px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.myproject .v-table-resizer {
+	display: block;
+	height: 1.2em;
+	float: right;
+	background: #aaa;
+	cursor: e-resize;
+	cursor: col-resize;
+	width: 1px;
+	overflow: hidden;
+}
+
+.myproject .v-table.v-disabled .v-table-resizer {
+	cursor: default;
+}
+
+.myproject .v-table-caption-container {
+	overflow: hidden;
+	white-space: nowrap;
+	margin-left: 6px;
+}
+
+.myproject .v-table-caption-container-align-right {
+	float: right;
+}
+
+.myproject .v-table-sort-indicator {
+	width: 0px;
+	height: 1.2em;
+	float: right;
+}
+
+.myproject .v-table-header-cell-asc .v-table-sort-indicator, .myproject .v-table-header-cell-desc .v-table-sort-indicator {
+	width: 16px;
+	height: 1.2em;
+	float: right;
+}
+
+.myproject .v-table-header-cell-asc .v-table-sort-indicator {
+	background: transparent url(../base/common/img/sprites.png) no-repeat right 6px;
+}
+
+.myproject .v-table-header-cell-desc .v-table-sort-indicator {
+	background: transparent url(../base/common/img/sprites.png) no-repeat right -10px;
+}
+
+.myproject .v-table-caption-container-align-center {
+	text-align: center;
+}
+
+.myproject .v-table-caption-container-align-right {
+	text-align: right;
+}
+
+.myproject .v-table-caption-container .v-icon, .myproject .v-table-header-drag .v-icon {
+	vertical-align: middle;
+}
+
+.myproject .v-table-body {
+	border: 1px solid #aaa;
+}
+
+.myproject .v-table-row-spacer {
+	height: 10px;
+	overflow: hidden;
+}
+
+.myproject .v-table-row, .myproject .v-table-row-odd {
+	background: #fff;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+.myproject .v-table-generated-row {
+	background: #efefef;
+}
+
+.myproject .v-table-body-noselection .v-table-row, .myproject .v-table-body-noselection .v-table-row-odd {
+	cursor: default;
+}
+
+.myproject .v-table .v-selected {
+	background: #999;
+	color: #fff;
+}
+
+.myproject .v-table-cell-content {
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 0 6px;
+	border-right: 1px solid #aaa;
+}
+
+.myproject .v-table-cell-wrapper {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.myproject .v-table-cell-wrapper-align-center {
+	text-align: center;
+}
+
+.myproject .v-table-cell-wrapper-align-right {
+	text-align: right;
+}
+
+.myproject .v-table-column-selector {
+	float: right;
+	background: transparent url(../base/common/img/sprites.png) no-repeat 4px -37px;
+	margin: -1.2em 0 0 0;
+	height: 1.2em;
+	width: 14px;
+	position: relative;
+	cursor: pointer;
+}
+
+.myproject .v-table.v-disabled .v-table-column-selector {
+	cursor: default;
+}
+
+.myproject .v-table-focus-slot-left {
+	border-left: 2px solid #999;
+	float: none;
+	margin-bottom: -1.2em;
+	width: auto;
+	background: transparent;
+	border-right: 1px solid #aaa;
+}
+
+.myproject .v-table-focus-slot-right {
+	border-right: 2px solid #999;
+	margin-left: -2px;
+}
+
+.myproject .v-table-header-drag {
+	position: absolute;
+	background: #efefef;
+	border: 1px solid #eee;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	margin-top: 20px;
+	z-index: 30000;
+}
+
+.myproject .v-table-header-drag .v-icon {
+	vertical-align: middle;
+}
+
+.myproject .v-table-scrollposition {
+	width: 160px;
+	background: #eee;
+	border: 1px solid #aaa;
+}
+
+.myproject .v-table-scrollposition span {
+	display: block;
+	text-align: center;
+}
+
+.myproject .v-table-body:focus, .myproject .v-table-body-wrapper:focus {
+	outline: none;
+}
+
+.myproject .v-table-body.focused {
+	border-color: #388ddd;
+}
+
+.myproject .v-table-focus .v-table-cell-content {
+	border-top: 1px dotted #0066bd;
+	border-bottom: 1px dotted #0066bd;
+}
+
+.myproject .v-table-focus .v-table-cell-wrapper {
+	margin-top: -1px;
+	margin-bottom: -1px;
+}
+
+.myproject .v-off {
+	color: #ddd;
+}
+
+.myproject .v-table .v-checkbox {
+	display: inline-block;
+}
+
+.myproject .v-table-drag .v-table-body {
+	border-color: #1d9dff;
+}
+
+.myproject .v-table-row-drag-middle .v-table-cell-content {
+	background-color: #bcdcff;
+}
+
+.myproject .v-table-row-drag-top .v-table-cell-content {
+	border-top: 2px solid #1d9dff;
+}
+
+.myproject .v-table-row-drag-top .v-table-cell-wrapper {
+	margin-top: -2px;
+}
+
+.myproject .v-table-row-drag-bottom .v-table-cell-content {
+	border-bottom: 2px solid #1d9dff;
+}
+
+.myproject .v-table-row-drag-bottom .v-table-cell-wrapper {
+	margin-bottom: -2px;
+}
+
+.myproject .v-table-row-drag-top .v-table-cell-content:first-child:before, .myproject .v-table-row-drag-bottom .v-table-cell-content:first-child:after {
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	margin-top: -4px;
+	margin-left: -6px;
+	background: transparent url(../base/common/img/drag-slot-dot.png);
+}
+
+.v-ff .myproject .v-table-row-drag-bottom .v-table-cell-content:first-child:after, .v-ie .myproject .v-table-row-drag-bottom .v-table-cell-content:first-child:after {
+	margin-top: -2px;
+}
+
+.myproject .v-tabsheet, .myproject .v-tabsheet-content, .myproject .v-tabsheet-deco {
+	outline: none;
+	text-align: left;
+}
+
+.myproject .v-tabsheet-tabs {
+	empty-cells: hide;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.myproject .v-tabsheet-tabitemcell:focus {
+	outline: none;
+}
+
+.myproject .v-tabsheet-tabitemcell, .myproject .v-tabsheet-spacertd {
+	margin: 0;
+	padding: 0;
+	vertical-align: bottom;
+}
+
+.myproject .v-tabsheet-spacertd {
+	width: 100%;
+}
+
+.myproject .v-tabsheet-spacertd div {
+	border-left: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	height: 1em;
+	padding: 0.2em 0;
+}
+
+.myproject .v-tabsheet-hidetabs > .v-tabsheet-tabcontainer {
+	display: none;
+}
+
+.myproject .v-tabsheet-scroller {
+	white-space: nowrap;
+	text-align: right;
+	margin-top: -1em;
+}
+
+.myproject .v-disabled .v-tabsheet-scroller {
+	display: none;
+}
+
+.myproject .v-tabsheet-scrollerPrev, .myproject .v-tabsheet-scrollerNext, .myproject .v-tabsheet-scrollerPrev-disabled, .myproject .v-tabsheet-scrollerNext-disabled {
+	border: 1px solid #aaa;
+	background: #fff;
+	width: 12px;
+	height: 1em;
+	cursor: pointer;
+}
+
+.myproject .v-tabsheet-scrollerPrev-disabled, .myproject .v-tabsheet-scrollerNext-disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.myproject .v-tabsheet-tabs .v-caption, .myproject .v-tabsheet-tabs .v-caption span {
+	white-space: nowrap;
+}
+
+.myproject .v-tabsheet-caption-close {
+	display: inline;
+	display: inline-block;
+	zoom: 1;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	vertical-align: middle;
+	user-select: none;
+	-khtml-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.myproject .v-tabsheet .v-disabled .v-tabsheet-caption-close {
+	cursor: default;
+	visibility: hidden;
+}
+
+.myproject .v-tabsheet-tabitem:hover .v-tabsheet-caption-close {
+	visibility: visible;
+}
+
+.myproject .v-tabsheet-tabitem {
+	border: 1px solid #aaa;
+	border-right: none;
+	cursor: pointer;
+	padding: 0.2em 0.5em;
+}
+
+.myproject .v-tabsheet-tabitem .v-caption {
+	cursor: inherit;
+}
+
+.myproject .v-tabsheet.v-disabled .v-tabsheet-tabitem, .myproject .v-tabsheet-tabitemcell-disabled .v-tabsheet-tabitem {
+	cursor: default;
+}
+
+.myproject .v-tabsheet-tabitem-selected {
+	cursor: default;
+	border-bottom-color: #fff;
+}
+
+.myproject .v-tabsheet-tabitem-selected .v-caption {
+	cursor: default;
+}
+
+.myproject .v-tabsheet-tabitem-focus .v-captiontext {
+	text-decoration: underline;
+}
+
+.myproject .v-tabsheet-tabitem-selected.v-tabsheet-tabitem-focus .v-captiontext {
+	text-decoration: inherit;
+}
+
+.myproject .v-tabsheet-content {
+	border: 1px solid #aaa;
+	border-top: none;
+	border-bottom: none;
+	position: relative;
+}
+
+.myproject .v-tabsheet-deco {
+	height: 1px;
+	background: #aaa;
+	overflow: hidden;
+}
+
+.myproject .v-tabsheet-hidetabs .v-tabsheet-content {
+	border: none;
+}
+
+.myproject .v-tabsheet-hidetabs .v-tabsheet-deco {
+	height: 0;
+}
+
+.myproject .v-textfield {
+	text-align: left;
+}
+
+.myproject .v-textarea {
+	resize: none;
+	white-space: pre-wrap;
+}
+
+.myproject input.v-textfield-prompt, .myproject textarea.v-textarea-prompt {
+	color: #999;
+	font-style: italic;
+}
+
+.myproject input.v-textfield-readonly, .myproject textarea.v-textarea-readonly {
+	background: transparent;
+	border: none;
+	resize: none;
+}
+
+.myproject input.v-disabled, .myproject textarea.v-disabled {
+	resize: none;
+}
+
+.myproject input.v-textfield-readonly:focus, .myproject textarea.v-textarea-readonly:focus {
+	outline: none;
+}
+
+.v-sa .myproject input:focus, .v-sa .myproject textarea:focus {
+	outline-width: medium;
+}
+
+.myproject .v-richtextarea {
+	border: 1px solid #aaa;
+	overflow: hidden;
+}
+
+.myproject .v-richtextarea .gwt-RichTextArea {
+	background: #fff;
+	border: none;
+}
+
+.myproject .v-richtextarea .gwt-HTML {
+	height: 100%;
+	font-size: 13px;
+}
+
+.myproject .v-richtextarea .gwt-RichTextToolbar {
+	white-space: nowrap;
+	background: #959595 url(../base/textfield/img/richtext-toolbar-bg.png) repeat-x 0 -42px;
+	border-bottom: 1px solid #7d7d7d;
+	padding: 2px;
+	overflow: hidden;
+}
+
+.myproject .v-richtextarea .gwt-RichTextToolbar-top {
+	padding-bottom: 1px;
+	overflow: hidden;
+	white-space: normal;
+}
+
+.myproject .v-richtextarea .gwt-RichTextToolbar-bottom {
+	clear: left;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.myproject .v-richtextarea .gwt-RichTextToolbar .gwt-ToggleButton, .myproject .v-richtextarea .gwt-RichTextToolbar .gwt-PushButton {
+	float: left;
+	display: inline;
+	width: 22px;
+	height: 21px;
+	overflow: hidden;
+	background: transparent url(../base/textfield/img/richtext-toolbar-bg.png) repeat-x;
+	cursor: pointer;
+	margin-right: 2px;
+	text-align: center;
+}
+
+.myproject .v-richtextarea .gwt-RichTextToolbar .gwt-ToggleButton-down, .myproject .v-richtextarea .gwt-RichTextToolbar .gwt-PushButton-down, .myproject .v-richtextarea .gwt-RichTextToolbar .gwt-ToggleButton-down-hovering, .myproject .v-richtextarea .gwt-RichTextToolbar .gwt-PushButton-down-hovering {
+	background-position: 0 -21px;
+}
+
+.myproject .v-richtextarea .gwt-RichTextToolbar .gwt-ListBox {
+	width: 24.5%;
+	margin-right: 2px;
+}
+
+.myproject .v-richtextarea-readonly {
+	border: none;
+}
+
+.myproject .v-tree {
+	text-align: left;
+	padding: 1px 0;
+	outline: none;
+}
+
+.myproject .v-tree-node {
+	background: transparent url(../base/common/img/sprites.png) no-repeat 5px -37px;
+	padding: 1px 0;
+}
+
+.myproject .v-tree-node-caption:focus {
+	outline: none;
+}
+
+.myproject div.v-tree-node-leaf {
+	background: transparent;
+}
+
+.myproject .v-tree-node-expanded {
+	background: transparent url(../base/common/img/sprites.png) no-repeat -5px -10px;
+}
+
+.myproject .v-tree-node-caption {
+	margin-left: 1em;
+}
+
+.myproject .v-tree-node span {
+	cursor: pointer;
+}
+
+.myproject .v-tree-node-caption div {
+	white-space: nowrap;
+}
+
+.myproject .v-tree-node-caption span, .myproject .v-tree-node-caption .v-icon {
+	vertical-align: middle;
+}
+
+.myproject .v-tree-node-selected span {
+	background: #999;
+	color: #fff;
+}
+
+.myproject .v-tree-node-children {
+	padding-left: 1em;
+}
+
+.myproject .v-tree .v-tree-node-drag-top {
+	border-top: 2px solid #1d9dff;
+	margin-top: -1px;
+	padding-top: 0;
+}
+
+.myproject .v-tree .v-tree-node-drag-bottom {
+	border-bottom: 2px solid #1d9dff;
+	margin-bottom: -1px;
+	padding-bottom: 0;
+}
+
+.myproject .v-tree .v-tree-node-drag-top:before, .myproject .v-tree .v-tree-node-drag-bottom:after, .myproject .v-tree .v-tree-node-caption-drag-center:after {
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	margin-top: -4px;
+	background: transparent url(../base/common/img/drag-slot-dot.png);
+}
+
+.myproject .v-tree .v-tree-node-drag-bottom:after {
+	margin-top: -2px;
+}
+
+.myproject .v-tree .v-tree-node-caption-drag-center:after {
+	margin-left: 14px;
+}
+
+.v-ff .myproject .v-tree .v-tree-node-caption-drag-center:after, .v-ie .myproject .v-tree .v-tree-node-caption-drag-center:after {
+	margin-top: -2px;
+}
+
+.myproject .v-tree .v-tree-node-drag-top {
+	background-position: 5px -38px;
+}
+
+.myproject .v-tree .v-tree-node-drag-top.v-tree-node-expanded {
+	background-position: -5px -11px;
+}
+
+.myproject .v-tree .v-tree-node-caption-drag-center div {
+	border: 2px solid #1d9dff;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin: -2px 2px -2px -2px;
+	background-color: #bcdcff;
+}
+
+.myproject .v-tree .v-tree-node-caption-drag-center div {
+	background-color: rgba(169, 209, 255, 0.6);
+}
+
+.myproject .v-tree .v-tree-node-caption-drag-center div, .myproject .v-tree .v-tree-node-drag-top, .myproject .v-tree .v-tree-node-drag-bottom {
+	border-color: rgba(0, 109, 232, 0.6);
+}
+
+.myproject .v-tree-connectors .v-tree-node-caption {
+	padding-top: 1px;
+}
+
+.myproject .v-tree-connectors .v-tree-node {
+	background: transparent url(../base/tree/img/connector-expand.png) no-repeat 2px -52px;
+}
+
+.myproject .v-tree-connectors .v-tree-node-expanded {
+	background: transparent url(../base/tree/img/connector-collapse.png) no-repeat 2px -52px;
+}
+
+.myproject .v-tree-connectors .v-tree-node-last {
+	background: transparent url(../base/tree/img/connector-expand-last.png) no-repeat 2px -52px;
+}
+
+.myproject .v-tree-connectors .v-tree-node-expanded.v-tree-node-last {
+	background: transparent url(../base/tree/img/connector-collapse-last.png) no-repeat 2px -52px;
+}
+
+.myproject .v-tree-connectors .v-tree-node-leaf {
+	background: transparent url(../base/tree/img/connector-leaf.png) repeat-y 2px 50%;
+}
+
+.myproject .v-tree-connectors .v-tree-node-leaf-last {
+	background: transparent url(../base/tree/img/connector-leaf-last.png) repeat-y 2px 50%;
+}
+
+.myproject .v-tree-connectors .v-tree-node-children {
+	background: transparent url(../base/tree/img/connector.png) repeat-y 2px 0;
+}
+
+.myproject .v-tree-connectors .v-tree-node-children-last {
+	background: transparent;
+}
+
+.myproject .v-tree-connectors .v-tree-node-drag-top, .myproject .v-tree-connectors .v-tree-node-expanded.v-tree-node-drag-top {
+	background-position: 2px -53px;
+}
+
+.myproject .v-tree-connectors .v-tree-node-drag-top.v-tree-node-leaf {
+	background-position: 2px 50%;
+}
+
+.myproject .v-treetable-treespacer {
+	display: inline-block;
+	background: transparent;
+	height: 10px;
+	width: 18px;
+	position: absolute;
+	left: 0;
+	top: 5px;
+}
+
+.myproject .v-treetable-node-closed {
+	background: url(../base/treetable/img/arrow-right.png) right top no-repeat;
+}
+
+.myproject .v-treetable-node-open {
+	background: url(../base/treetable/img/arrow-down.png) right top no-repeat;
+}
+
+.myproject .v-treetable .v-checkbox {
+	display: inline-block;
+	padding-bottom: 4px;
+}
+
+.myproject .v-treetable .v-table-row .v-table-cell-content, .myproject .v-treetable .v-table-row-odd .v-table-cell-content {
+	z-index: 10;
+}
+
+.myproject .v-treetable .v-table-cell-wrapper {
+	position: relative;
+}
+
+.myproject .v-treetable .v-table-body .v-table-table .v-table-row-animating {
+	zoom: 1;
+	z-index: 1;
+}
+
+.myproject .v-treetable .v-table-body .v-table-table .v-table-row-animating, .myproject .v-treetable .v-table-body .v-table-table .v-table-row-animating .v-table-cell-content {
+	background: transparent;
+}
+
+.myproject .v-treetable-animation-clone {
+	border-spacing: 0;
+	zoom: 1;
+}
+
+.myproject div.v-treetable-animation-clone-wrapper {
+	position: absolute;
+	z-index: 2;
+	background-color: #fff;
+}
+
+.myproject div.v-treetable-animation-clone-wrapper table.v-treetable-animation-clone {
+	background-color: #fff;
+}
+
+.myproject div table.v-treetable-animation-clone tr.v-table-row, .myproject div table.v-treetable-animation-clone tr.v-table-row-odd, .myproject div table.v-treetable-animation-clone tr.v-table-row td.v-table-cell-content, .myproject div table.v-treetable-animation-clone tr.v-table-row-odd td.v-table-cell-content {
+	visibility: visible;
+}
+
+.myproject .v-upload {
+	white-space: nowrap;
+}
+
+.myproject .v-upload-immediate {
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+}
+
+.myproject .v-upload-immediate .v-button {
+	width: 100%;
+}
+
+.v-ff .myproject .v-upload-immediate, .v-op .myproject .v-upload-immediate {
+	display: inline-block;
+}
+
+.myproject .v-upload-immediate input {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	z-index: 2;
+	position: absolute;
+	right: 0;
+	height: 21px;
+	text-align: right;
+	border: none;
+	background: transparent;
+}
+
+.myproject .v-upload-immediate button {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	text-align: left;
+}
+
+.myproject .v-window {
+	background: #fff;
+}
+
+.myproject .v-window-contents {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.myproject .v-window.v-has-width > div.popupContent, .myproject .v-window.v-has-width .v-window-wrap, .myproject .v-window.v-has-width .v-window-contents, .myproject .v-window.v-has-width .v-window-contents > div {
+	width: 100%;
+}
+
+.myproject .v-window.v-has-height > div.popupContent, .myproject .v-window.v-has-height .v-window-wrap, .myproject .v-window.v-has-height .v-window-contents, .myproject .v-window.v-has-height .v-window-contents > div {
+	height: 100%;
+}
+
+.myproject .v-window-outerheader {
+	padding: 0.3em 1em;
+	height: 1.6em;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.myproject .v-window-outerheader, .myproject .v-window-draggingCurtain {
+	cursor: move;
+}
+
+.myproject .v-window-header {
+	font-weight: bold;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ie-user-select: none;
+	user-select: none;
+}
+
+.myproject div.v-window-header {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	overflow: hidden;
+	padding: 0;
+}
+
+.myproject .v-window-header .v-icon {
+	vertical-align: middle;
+}
+
+.myproject .v-window-contents > div {
+	outline: none;
+}
+
+.myproject .v-window-footer {
+	overflow: hidden;
+	zoom: 1;
+	height: 10px;
+	position: relative;
+	cursor: move;
+}
+
+.myproject .v-window-resizebox {
+	width: 10px;
+	height: 10px;
+	background: #ddd;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+}
+
+.myproject .v-window-resizebox, .myproject .v-window-resizingCurtain {
+	cursor: se-resize;
+}
+
+.myproject .v-window div.v-window-footer-noresize {
+	height: 0;
+}
+
+.myproject .v-window-resizebox-disabled, .myproject .v-window-closebox-disabled, .myproject .v-window-restorebox-disabled, .myproject .v-window-maximizebox-disabled {
+	cursor: default;
+	display: none;
+}
+
+.myproject .v-window-closebox, .myproject .v-window-restorebox, .myproject .v-window-maximizebox {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1em;
+	height: 1em;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.myproject .v-window-maximizebox, .myproject .v-window-restorebox {
+	right: 1.1em;
+}
+
+.myproject .v-window-closebox {
+	background: red;
+}
+
+.myproject .v-window-maximizebox {
+	background: blue;
+}
+
+.myproject .v-window-restorebox {
+	background: yellow;
+}
+
+.myproject .v-window-modalitycurtain {
+	top: 0;
+	left: 0;
+	background: #999;
+	opacity: 0.5;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	filter: alpha(opacity=50);
+}
+
+.myproject .v-shadow-window {
+	position: absolute;
+	display: none;
+	pointer-events: none;
+}
+
+.v-ie8 .myproject .v-shadow-window {
+	display: block;
+}
+
+.myproject .v-shadow-window .top-left {
+	position: absolute;
+	overflow: hidden;
+	top: -10px;
+	left: -15px;
+	width: 28px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/top-left.png);
+}
+
+.myproject .v-shadow-window .top {
+	position: absolute;
+	overflow: hidden;
+	top: -10px;
+	left: 13px;
+	height: 28px;
+	right: 13px;
+	background: transparent url(../base/window/img/shadow/top.png);
+}
+
+.myproject .v-shadow-window .top-right {
+	position: absolute;
+	overflow: hidden;
+	top: -10px;
+	right: -15px;
+	width: 28px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/top-right.png);
+}
+
+.myproject .v-shadow-window .left {
+	position: absolute;
+	overflow: hidden;
+	top: 18px;
+	left: -15px;
+	width: 28px;
+	bottom: 10px;
+	background: transparent url(../base/window/img/shadow/left.png);
+}
+
+.myproject .v-shadow-window .center {
+	position: absolute;
+	overflow: hidden;
+	top: 18px;
+	left: 13px;
+	bottom: 10px;
+	right: 13px;
+	background: transparent url(../base/window/img/shadow/center.png);
+}
+
+.myproject .v-shadow-window .right {
+	position: absolute;
+	overflow: hidden;
+	top: 18px;
+	right: -15px;
+	width: 28px;
+	bottom: 10px;
+	background: transparent url(../base/window/img/shadow/right.png);
+}
+
+.myproject .v-shadow-window .bottom-left {
+	position: absolute;
+	overflow: hidden;
+	bottom: -18px;
+	left: -15px;
+	width: 28px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/bottom-left.png);
+}
+
+.myproject .v-shadow-window .bottom {
+	position: absolute;
+	overflow: hidden;
+	bottom: -18px;
+	left: 13px;
+	right: 13px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/bottom.png);
+}
+
+.myproject .v-shadow-window .bottom-right {
+	position: absolute;
+	overflow: hidden;
+	bottom: -18px;
+	right: -15px;
+	width: 28px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/bottom-right.png);
+}
+
+.myproject.v-app {
+	background: transparent;
+	overflow: hidden;
+}
+
+.myproject .v-ui {
+	margin-top: 0;
+	border-top: none;
+}
+
+.myproject .v-tooltip {
+	background: #fdfdee;
+	border: 1px solid #c0c0b9;
+	padding: 1px 5px;
+	color: #222;
+	font-size: 11.7px;
+	line-height: normal;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.v-sa .myproject .v-tooltip {
+	outline-color: #000000;
+	outline-color: rgba(0, 0, 0, 0.2);
+	outline: 1px solid;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border: none;
+}
+
+.myproject.v-app, .myproject .v-window, .myproject .v-popupview-popup, .myproject .v-tooltip, .myproject.v-app input, .myproject.v-app select, .myproject.v-app button, .myproject.v-app textarea, .myproject .v-window input, .myproject .v-window select, .myproject .v-window button, .myproject .v-window textarea, .myproject .v-popupview-popup input, .myproject .v-popupview-popup select, .myproject .v-popupview-popup button, .myproject .v-popupview-popup textarea, .myproject .v-filterselect-suggestpopup, .myproject .v-datefield-popup, .myproject .v-contextmenu, .myproject .v-Notification, .myproject .v-menubar-submenu, .myproject .v-table-header-drag, .myproject .v-drag-element {
+	font-family: Arial, Helvetica, "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #222;
+}
+
+.myproject .v-window, .myproject .v-popupview-popup, .myproject .v-filterselect-suggestpopup, .myproject .v-datefield-popup, .myproject .v-contextmenu, .myproject .v-Notification, .myproject .v-menubar-submenu {
+	border: 1px solid #adadad;
+	border-color: #000000;
+	border-color: rgba(0, 0, 0, 0.4);
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	overflow: hidden;
+}
+
+.myproject .v-window, .myproject .v-popupview-popup, .myproject .v-filterselect-suggestpopup, .myproject .v-datefield-popup, .myproject .v-contextmenu, .myproject .v-menubar-submenu {
+	background: #e8e8e8;
+	background: rgba(232, 232, 232, 0.9);
+	background-image: url(../chameleon/img/grad-light-top.png) repeat-x;
+}
+
+.myproject .v-filterselect-suggestpopup, .myproject .v-contextmenu, .myproject .v-menubar-submenu {
+	padding: 3px 0;
+}
+
+.myproject .v-contextmenu .gwt-MenuItem, .myproject .v-filterselect-suggestpopup .gwt-MenuItem, .myproject .v-menubar-submenu .v-menubar-menuitem {
+	padding: 0.05em 0.7em;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	cursor: default;
+}
+
+.myproject .v-contextmenu td.gwt-MenuItem-selected div, .myproject .v-filterselect-suggestpopup td.gwt-MenuItem-selected, .myproject .v-table .v-table-body .v-selected, .myproject .v-menubar-submenu span.v-menubar-menuitem-selected {
+	text-shadow: none;
+}
+
+.myproject .v-contextmenu .gwt-MenuItem-selected, .myproject .v-filterselect-suggestpopup .gwt-MenuItem-selected, .myproject .v-table .v-selected, .myproject .v-menubar-submenu .v-menubar-menuitem-selected {
+	background-color: #333;
+}
+
+.myproject .v-contextmenu .gwt-MenuItem-selected div {
+	background: transparent;
+}
+
+.myproject .v-tooltip .v-errormessage {
+	color: #b2320b;
+	padding-left: 14px;
+	background: transparent url(../chameleon/img/error-indicator.png) no-repeat 0 50%;
+}
+
+.myproject .v-errorindicator {
+	width: 13px;
+	height: 1.4em;
+	background: transparent url(../chameleon/img/error-indicator.png) no-repeat right 50%;
+}
+
+.myproject .v-caption-small .v-errorindicator {
+	height: 1.2em;
+}
+
+.myproject .v-caption-big .v-errorindicator {
+	height: 1.8em;
+}
+
+.myproject .v-accordion {
+	border: 1px solid #b3b3b3;
+}
+
+.myproject .v-accordion-item-open {
+	border-bottom: 1px solid #b3b3be;
+}
+
+.myproject .v-accordion-item-caption, .myproject .v-accordion-item-open .v-accordion-item-caption:active {
+	padding: 0;
+	background: transparent url(../chameleon/img/grad-light-top.png) repeat-x;
+	border-width: 0 0 1px 0;
+	border-style: solid none;
+}
+
+.myproject div.v-accordion-item-caption, .myproject div.v-accordion-item-open .v-accordion-item-caption:active {
+	background-color: transparent;
+}
+
+.myproject .v-accordion-item-caption .v-caption {
+	padding: 0.2em 0.9em;
+}
+
+.myproject .v-accordion-item-caption:active {
+	background-image: url(../chameleon/img/grad-dark-bottom.png);
+	background-position: left bottom;
+}
+
+.myproject .v-accordion-opaque {
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.myproject .v-accordion-opaque .v-accordion-item-caption, .myproject .v-accordion-opaque .v-accordion-item-open {
+	border: none;
+}
+
+.myproject .v-accordion-opaque .v-accordion-item-caption, .myproject .v-accordion-opaque .v-accordion-item-open .v-accordion-item-caption:active {
+	background-color: #b8b8b8;
+}
+
+.myproject .v-accordion-opaque .v-accordion-item-open {
+	background-color: #fff;
+}
+
+.myproject .v-accordion-opaque .v-accordion-item-first, .myproject .v-accordion-opaque .v-accordion-item-first .v-accordion-item-caption {
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	overflow: hidden;
+}
+
+.myproject .v-accordion-borderless {
+	border: none;
+}
+
+.myproject .v-accordion-opaque.borderless, .myproject .v-accordion-opaque.borderless .v-accordion-item-first .v-accordion-item-caption {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+.myproject .v-button:active, .v-ie8 .myproject .v-pressed.v-button, .myproject div.v-button-down {
+	background-image: url(../chameleon/img/grad-dark-bottom2.png);
+	background-color: #afafaf;
+}
+
+.myproject .v-button:active .v-button-wrap, .v-ie8 .myproject .v-pressed.v-button .v-button-wrap, .myproject .v-button-down .v-button-wrap {
+	background-image: url(../chameleon/img/grad-dark-top2.png);
+	border: 1px solid #888;
+	padding: 3px 12px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.myproject div.v-button-down .v-button-wrap {
+	background-image: url(../chameleon/img/grad-dark-top2.png);
+}
+
+.myproject .v-button {
+	overflow: hidden;
+}
+
+.myproject .v-button, .myproject .v-disabled.v-button:focus, .myproject .v-disabled.v-button:active {
+	border: 1px solid #8b8b8b;
+	background: #c9c9c9;
+	border-radius: 3px;
+	background: #c9c9c9 url(../chameleon/img/grad-dark-bottom.png) repeat-x left bottom;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+	text-shadow: 0 1px 0 #fff;
+	padding: 0;
+}
+
+.myproject .v-button-wrap, .myproject .v-disabled:active .v-button-wrap {
+	display: block;
+	padding: 4px 13px;
+	border: none;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	background: transparent url(../chameleon/img/grad-light-top.png) repeat-x;
+	height: 100%;
+	text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+}
+
+.v-sa .myproject .v-button, .v-sa .myproject .v-button-wrap, .v-ff .myproject .v-button, .v-ff .myproject .v-button-wrap {
+	overflow: hidden;
+}
+
+.myproject .v-button:focus {
+	outline: none;
+}
+
+.myproject .v-button .v-icon {
+	margin-left: -0.5em;
+}
+
+.myproject .v-button .v-button-caption {
+	line-height: 1.26;
+}
+
+.myproject .v-button-big {
+	font-size: 15.6px;
+}
+
+.myproject .v-button-small {
+	font-size: 11.05px;
+	font-weight: normal;
+}
+
+.myproject .v-button-small .v-button-wrap {
+	padding: 3px 11px;
+}
+
+.myproject .v-button-small:active .v-button-wrap, .v-ie8 .myproject .v-button-small.v-pressed .v-button-wrap, .myproject .v-button-down.small .v-button-wrap {
+	padding: 2px 10px;
+}
+
+.myproject .v-button-small .v-icon {
+	margin-top: -4px;
+	margin-bottom: -4px;
+}
+
+.myproject .v-button-wide .v-button-wrap {
+	padding-left: 26px;
+	padding-right: 26px;
+}
+
+.myproject .v-button-wide:active .v-button-wrap, .v-ie8 .myproject .v-button-wide.v-pressed .v-button-wrap {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.myproject .v-button-tall .v-button-wrap {
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+
+.myproject .v-button-tall:active .v-button-wrap, .v-ie8 .myproject .v-button-tall.v-pressed .v-button-wrap {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.myproject .v-button-default, .myproject .v-disabled.v-button-default:focus {
+	font-weight: bold;
+}
+
+.myproject div.v-button-link, .myproject div.v-button-link:focus, .myproject .v-button-link:active, .myproject div.v-disabled.v-button-link, .myproject div.v-disabled.v-button-link:focus, body.v-ie .myproject .v-pressed.v-button-link, .myproject div.v-button-borderless, .myproject div.v-button-borderless:focus, .myproject .v-button-borderless:active, .myproject div.v-disabled.v-button-borderless, .myproject div.v-disabled.v-button-borderless:focus, body.v-ie .myproject .v-pressed.v-button-borderless {
+	background: transparent;
+	font-weight: normal;
+	text-shadow: none;
+	border: none;
+	margin: 1px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+
+.myproject .v-button-link .v-button-wrap, .myproject .v-button-borderless .v-button-wrap {
+	display: inline;
+}
+
+.myproject div.v-button-link .v-button-wrap, .myproject div.v-button-link:focus .v-button-wrap, .myproject .v-button-link:active .v-button-wrap, .myproject div.v-disabled.v-button-link .v-button-wrap, .myproject div.v-disabled.v-button-link:focus .v-button-wrap, body.v-ie .myproject .v-pressed.v-button-link .v-button-wrap, .myproject div.v-button-borderless .v-button-wrap, .myproject div.v-button-borderless:focus .v-button-wrap, .myproject .v-button-borderless:active .v-button-wrap, .myproject div.v-disabled.v-button-borderless .v-button-wrap, .myproject div.v-disabled.v-button-borderless:focus .v-button-wrap, body.v-ie .myproject .v-pressed.v-button-borderless .v-button-wrap {
+	background: transparent;
+	font-weight: normal;
+	text-shadow: none;
+	border: none;
+	padding: 1px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+
+.myproject .v-button-link:focus .v-button-caption, .myproject .v-button-borderless:focus .v-button-caption {
+	border: 1px dotted gray;
+	margin: -1px;
+}
+
+.myproject .v-button-link:active .v-button-caption, .myproject .v-button-borderless:active .v-button-caption {
+	border: none;
+	margin: 0;
+}
+
+.myproject .v-button-borderless:active .v-icon {
+	opacity: 0.6;
+}
+
+.myproject .v-button-link .v-icon, .myproject .v-button-borderless .v-icon {
+	margin-left: 0;
+}
+
+.myproject .v-button-icon-on-top.v-button-borderless:focus .v-button-caption {
+	margin-top: 1px;
+}
+
+.myproject .v-button-icon-on-top .v-button-caption, .myproject .v-button-icon-on-top:focus .v-button-caption, .myproject .v-button-icon-on-top.v-button-borderless:active .v-button-caption {
+	display: block;
+	margin-top: 2px;
+}
+
+.myproject .v-button-icon-on-top .v-icon {
+	margin: 0;
+}
+
+.myproject .v-button-icon-on-right .v-icon {
+	float: right;
+	margin-left: 3px;
+	margin-right: -0.5em;
+}
+
+.myproject .v-button-icon-only .v-button-caption {
+	display: none;
+}
+
+.myproject .v-button-icon-only .v-icon {
+	margin-right: -0.5em;
+}
+
+.myproject .v-colorpicker-button-color {
+	border: 1px solid #8B8B8B;
+}
+
+.myproject .v-colorpicker-popup {
+	width: 248px;
+}
+
+.myproject .v-colorpicker-popup .v-tabsheet .v-colorpicker-grid {
+	height: 308px;
+}
+
+.myproject .v-grid-sidebar.v-contextmenu .v-on:before, .myproject .v-grid-sidebar.v-contextmenu .v-off:before {
+	content: none;
+	font-size: 0;
+	margin-right: 0;
+}
+
+.myproject .v-label-h1, .myproject .v-label h1, .myproject .v-label-h2, .myproject .v-label h2, .myproject .v-label-h3, .myproject .v-label h3, .myproject .v-label-h4, .myproject .v-label h4 {
+	margin: 0;
+	font-weight: bold;
+}
+
+.myproject .v-label-h1, .myproject .v-label h1 {
+	padding: 0.75em 0 0.5em 0;
+	font-size: 24.05px;
+}
+
+.myproject .v-label-h2, .myproject .v-label h2 {
+	padding: 0.67em 0 0.33em 0;
+	font-size: 18.2px;
+}
+
+.myproject .v-label-h3, .myproject .v-label h3 {
+	margin: 0.71em 0 0.29em 0;
+	font-size: 14.3px;
+}
+
+.myproject .v-label-h4, .myproject .v-label h4 {
+	padding: 0.23em 0;
+	font-size: 13px;
+}
+
+.myproject .v-label-big {
+	font-size: 15.6px;
+}
+
+.myproject .v-label-small {
+	font-size: 11.7px;
+	line-height: 1.3;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+.myproject .v-label-tiny {
+	font-size: 11.05px;
+	line-height: 1.2;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+.myproject.v-app .v-label-warning, .myproject.v-app .v-label-error {
+	color: #574734;
+	background: #fffec8 url(../chameleon/img/label-warning-icon.png) no-repeat 0.2em 50%;
+	white-space: nowrap;
+	padding: 0.3em 1em 0.3em 2.4em;
+	overflow: hidden;
+	width: auto !important;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	text-shadow: none;
+}
+
+.myproject.v-app .v-label-error {
+	color: #fff;
+	font-weight: bold;
+	background: #c22f24 url(../chameleon/img/label-error-icon.png) no-repeat 0.2em 50%;
+	text-shadow: 0 1px 0 #8f2e27;
+}
+
+.myproject .v-label-big.v-label-warning, .myproject .v-label-big.v-label-error {
+	background-image: url(../chameleon/img/label-warning-icon-big.png);
+	background-position: 0 50%;
+	padding: 0.5em 1em 0.5em 3em;
+}
+
+.myproject .v-label-big.v-label-error {
+	background-image: url(../chameleon/img/label-error-icon-big.png);
+}
+
+.myproject.v-app .v-label-loading {
+	height: 32px;
+	line-height: 32px;
+	background-image: url(../base/common/img/loading-indicator.gif);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	white-space: nowrap;
+	padding: 0.3em 1em 0.3em 36px;
+	overflow: hidden;
+	width: auto !important;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.myproject .v-menubar {
+	padding: 0 0.4em;
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x;
+	border: 1px solid #b3b3b3;
+	border-width: 1px 0;
+}
+
+.myproject .v-menubar .v-menubar-menuitem {
+	padding: 0.2em 0.5em;
+	line-height: normal;
+}
+
+.myproject .v-menubar-submenu .v-menubar-menuitem {
+	padding-right: 1.5em;
+}
+
+.myproject .v-menubar-submenu .v-menubar-submenu-indicator {
+	margin-top: 0.1em;
+	font-size: 11.7px;
+}
+
+.myproject .v-menubar-submenu .v-menubar-menuitem-selected {
+	background-image: url(../chameleon/img/grad-light-top2.png);
+	background-position: 0 -1px;
+}
+
+.myproject .v-menubar-popup {
+	border-radius: 5px;
+}
+
+.myproject div.v-Notification {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	font-size: 16px;
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+	background: white url(../chameleon/img/grad-light-top.png) repeat-x;
+	background: rgba(255, 255, 255, 0.9) url(../chameleon/img/grad-light-top.png) repeat-x;
+}
+
+.myproject .v-Notification-description {
+	line-height: 1.3;
+}
+
+.myproject div.v-Notification-warning {
+	background-color: #fffec8;
+	color: #574734;
+	border: 2px solid #fee3af;
+}
+
+.myproject div.v-Notification-warning .v-Notification-caption {
+	padding-left: 44px;
+	background: transparent url(../chameleon/img/label-warning-icon-big.png) no-repeat 0 50%;
+}
+
+.myproject div.v-Notification-error {
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	background: #c22f24 url(../chameleon/img/error-close.png) no-repeat right top;
+	border: 2px solid #ca3030;
+}
+
+.myproject div.v-Notification-error .v-Notification-caption {
+	padding-left: 44px;
+	background: transparent url(../chameleon/img/label-error-icon-big.png) no-repeat 0 50%;
+}
+
+.myproject div.v-Notification-tray {
+	color: #fff;
+	margin: 0 5px 5px 0;
+	background: #3b3b3b url(../chameleon/img/grad-light-top2.png) repeat-x;
+	border: 1px solid #5b5b5b;
+	padding: 0.8em 0.9em;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.myproject .v-Notification-tray .v-Notification-caption {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.myproject .v-Notification-tray .v-Notification-description {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.myproject div.v-Notification-system {
+	color: #fff;
+	border: none;
+	background-color: #b40000;
+}
+
+.myproject .v-panel-caption {
+	background: #b9dcff;
+	font-size: 15.6px;
+	border: 1px solid #b3b3b3;
+	border-bottom: none;
+	padding: 0.2em 0.6em;
+}
+
+.myproject .v-panel-nocaption {
+	padding: 0;
+	height: 0;
+	overflow: hidden;
+	border-top: 1px solid #b3b3b3;
+}
+
+.myproject .v-panel-content {
+	background: #fff;
+	border: 1px solid #b3b3b3;
+	border-top: none;
+	border-bottom: none;
+}
+
+.myproject .v-panel-deco {
+	height: 0;
+	overflow: hidden;
+	border-top: 1px solid #b3b3b3;
+}
+
+.myproject div.v-panel-caption-borderless {
+	border: none;
+}
+
+.myproject div.v-panel-nocaption-borderless, .myproject div.v-panel-content-borderless, .myproject div.v-panel-deco-borderless {
+	border: none;
+	background: transparent;
+}
+
+.myproject .v-panel-light .v-panel-caption-light {
+	background: transparent;
+	font-weight: normal;
+	border-bottom: 1px solid #b3b3b3;
+}
+
+.myproject div.v-panel-content-light {
+	background: transparent;
+}
+
+.myproject .v-panel-bubble .v-panel-captionwrap {
+	border: 1px solid #b3b3b3;
+	border-bottom: none;
+	background: #fff;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	padding: 1px 2px;
+	overflow: hidden;
+}
+
+.myproject .v-panel-bubble .v-panel-caption-bubble {
+	border: none;
+	background-image: url(../chameleon/img/grad-light-top.png);
+	background-repeat: repeat-x;
+	background-position: 0 -1px;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	margin: 1px 0;
+	font-size: 13px;
+	line-height: 1.2;
+	padding: 0.3em 0.6em;
+}
+
+.myproject .v-panel-nocaption-bubble {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+.myproject .v-panel-deco-bubble {
+	height: 2px;
+	border: 1px solid #b3b3b3;
+	border-top: none;
+	background: #fff;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+}
+
+.myproject div.v-panel-borderless .v-panel-captionwrap, .myproject div.v-panel-borderless .v-panel-deco-bubble {
+	border: none;
+	padding: 0;
+	background: transparent;
+}
+
+.myproject div.v-panel-borderless .v-panel-content-bubble {
+	background: transparent;
+}
+
+.myproject .v-popupview-popup {
+	padding: 0.3em 0.4em;
+}
+
+.myproject .v-progressbar-wrapper {
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	background: #eee url(../chameleon/img/grad-dark-bottom.png) repeat-x left bottom;
+	overflow: visible;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+.myproject .v-progressbar-indicator {
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x 0 -10px;
+	margin: -1px;
+	height: 7px;
+	border: 1px solid #b3b3b3;
+}
+
+.myproject .v-progressbar-small {
+	width: 110px;
+}
+
+.myproject .v-progressbar-small .v-progressbar-wrapper, .myproject .v-progressbar-small .v-progressbar-indicator {
+	height: 2px;
+	border-radius: 1px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+}
+
+.myproject .v-progressbar-big {
+	width: 250px;
+}
+
+.myproject .v-progressbar-big .v-progressbar-wrapper, .myproject .v-progressbar-big .v-progressbar-indicator {
+	height: 14px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.myproject .v-progressbar-indeterminate.v-progressbar-big {
+	width: 42px;
+	height: 42px;
+	background: #fff url(../base/common/img/ajax-loader-big.gif) no-repeat 50%;
+}
+
+.myproject .v-progressbar-indeterminate.v-disabled {
+	display: none;
+}
+
+.myproject .v-progressbar-indeterminate.v-progressbar-bar {
+	display: block;
+	width: 150px;
+	height: 9px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.myproject .v-progressbar-indeterminate.bar.v-progressbar-small {
+	width: 110px;
+	height: 4px;
+}
+
+.myproject .v-progressbar-indeterminate.bar.v-progressbar-big {
+	width: 200px;
+	height: 16px;
+}
+
+.myproject .v-progressbar-indeterminate.bar .v-progressbar-wrapper {
+	display: block;
+	background: #fff url(../chameleon/img/indeterminate-progress.gif);
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	overflow: hidden;
+}
+
+.myproject .v-progressbar-indeterminate.bar .v-progressbar-indicator {
+	display: block;
+	background: transparent url(../chameleon/img/grad-light-top.png) repeat-x;
+	border: none;
+	margin: 0;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	overflow: hidden;
+}
+
+.myproject .v-progressbar-indeterminate.bar.v-progressbar-small .v-progressbar-indicator {
+	background: transparent;
+}
+
+.myproject .v-progressbar-indeterminate.bar.v-disabled .v-progressbar-indicator {
+	background: #fff;
+}
+
+.myproject .v-progressindicator-wrapper {
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	background: #eee url(../chameleon/img/grad-dark-bottom.png) repeat-x left bottom;
+	overflow: visible;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+.myproject .v-progressindicator-indicator {
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x 0 -10px;
+	margin: -1px;
+	height: 7px;
+	border: 1px solid #b3b3b3;
+}
+
+.myproject .v-progressindicator-small {
+	width: 110px;
+}
+
+.myproject .v-progressindicator-small .v-progressindicator-wrapper, .myproject .v-progressindicator-small .v-progressindicator-indicator {
+	height: 2px;
+	border-radius: 1px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+}
+
+.myproject .v-progressindicator-big {
+	width: 250px;
+}
+
+.myproject .v-progressindicator-big .v-progressindicator-wrapper, .myproject .v-progressindicator-big .v-progressindicator-indicator {
+	height: 14px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.myproject .v-progressindicator-indeterminate.v-progressindicator-big {
+	width: 42px;
+	height: 42px;
+	background: #fff url(../base/common/img/ajax-loader-big.gif) no-repeat 50%;
+}
+
+.myproject .v-progressindicator-indeterminate.v-disabled {
+	display: none;
+}
+
+.myproject .v-progressindicator-indeterminate.v-progressindicator-bar {
+	display: block;
+	width: 150px;
+	height: 9px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.myproject .v-progressindicator-indeterminate.bar.v-progressindicator-small {
+	width: 110px;
+	height: 4px;
+}
+
+.myproject .v-progressindicator-indeterminate.bar.v-progressindicator-big {
+	width: 200px;
+	height: 16px;
+}
+
+.myproject .v-progressindicator-indeterminate.bar .v-progressindicator-wrapper {
+	display: block;
+	background: #fff url(../chameleon/img/indeterminate-progress.gif);
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	overflow: hidden;
+}
+
+.myproject .v-progressindicator-indeterminate.bar .v-progressindicator-indicator {
+	display: block;
+	background: transparent url(../chameleon/img/grad-light-top.png) repeat-x;
+	border: none;
+	margin: 0;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	overflow: hidden;
+}
+
+.myproject .v-progressindicator-indeterminate.bar.v-progressindicator-small .v-progressindicator-indicator {
+	background: transparent;
+}
+
+.myproject .v-progressindicator-indeterminate.bar.v-disabled .v-progressindicator-indicator {
+	background: #fff;
+}
+
+.myproject .v-slider {
+	border-top: 1px solid #9a9c9e;
+	border-bottom: 1px solid #bdbfc1;
+	margin: 3px 0;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.myproject .v-slider-base {
+	height: 4px;
+	background: #e0e2e2 url(../chameleon/img/grad-dark-top2.png) repeat-x;
+	border-top: 1px solid #adb0b1;
+	border-left: 1px solid #a0a3a6;
+	border-right: 1px solid #a0a3a6;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.myproject .v-slider-handle {
+	background: #c9c9c9 url(../chameleon/img/grad-dark-bottom2.png) repeat-x left bottom;
+	border: 1px solid #b3b3b3;
+	width: 10px;
+	height: 10px;
+	margin-top: -5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+.myproject .v-slider-handle-active {
+	background-color: #afafaf;
+}
+
+.myproject .v-slider-vertical {
+	width: auto;
+	margin: 0 4px;
+	border-width: 0 1px;
+}
+
+.myproject .v-slider-vertical .v-slider-base {
+	background-image: none;
+	width: 4px;
+	border-width: 1px 1px 0;
+}
+
+.myproject .v-slider-vertical .v-slider-handle {
+	width: 10px;
+	height: 10px;
+	margin: 0;
+	margin-left: -5px;
+}
+
+.myproject .v-splitpanel-hsplitter div, .myproject .v-splitpanel-vsplitter div {
+	background: transparent url(../chameleon/img/split-handle.png) no-repeat 2px 50%;
+	margin: 0 -1px;
+	width: 9px;
+}
+
+.myproject .v-splitpanel-vsplitter div {
+	background-position: 50% 2px;
+	margin: -1px 0;
+	width: auto;
+	height: 9px;
+}
+
+.myproject .v-splitpanel-hsplitter, .myproject .v-splitpanel-hsplitter-locked {
+	border-style: solid;
+	border-width: 0 1px;
+	border-color: #b0b0b0;
+	width: 7px;
+	background: #b3b3b3 url(../chameleon/img/grad-light-left.png) repeat-y;
+}
+
+.myproject .v-splitpanel-vsplitter, .myproject .v-splitpanel-vsplitter-locked {
+	border-style: solid;
+	border-width: 1px 0;
+	border-color: #b0b0b0;
+	height: 7px;
+	background: #b3b3b3 url(../chameleon/img/grad-light-top.png) repeat-x;
+}
+
+.myproject.v-app .v-splitpanel-hsplitter-small, .myproject.v-app .v-splitpanel-hsplitter-small-locked {
+	width: 1px;
+	border: none;
+	background-image: none;
+}
+
+.myproject.v-app .v-splitpanel-vsplitter-small, .myproject.v-app .v-splitpanel-vsplitter-small-locked {
+	height: 1px;
+	border: none;
+	background-image: none;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+.myproject .v-splitpanel-hsplitter-small div {
+	width: 7px;
+	margin-left: -2px;
+	background: transparent;
+}
+
+.myproject .v-splitpanel-vsplitter-small div {
+	height: 7px;
+	margin-top: -2px;
+	background: transparent;
+	overflow: hidden;
+}
+
+.myproject .v-table-table {
+	line-height: 1.4;
+}
+
+.myproject .v-table-header-wrap, .myproject .v-table-header-drag {
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x;
+	height: 1.4em;
+	line-height: normal;
+}
+
+.myproject .v-table-caption-container, .myproject .v-table-header-drag {
+	padding-top: 0.2em;
+	padding-right: 4px;
+}
+
+.myproject .v-table-header-drag {
+	padding-left: 0.3em;
+}
+
+.myproject .v-table-resizer {
+	background: transparent;
+	border-right: 1px solid #b3b3b3;
+	padding-left: 1px;
+	height: 1.4em;
+}
+
+.myproject div.v-table-focus-slot-left {
+	background: transparent;
+	border-left: 2px solid #b3b3b3;
+	border-right: none;
+	padding-left: 0;
+	padding-right: 1px;
+	float: left;
+	margin: 0;
+}
+
+.myproject .v-table-row, .myproject .v-table-row-odd {
+	background: transparent;
+}
+
+.myproject .v-table-generated-row {
+	background: #c9c9c9;
+}
+
+.myproject .v-table tr.v-selected {
+	background-image: url(../chameleon/img/grad-light-top2.png);
+	background-position: 0 -1px;
+}
+
+.myproject div.v-table-focus-slot-right {
+	background: transparent;
+	border-right: 2px solid #b3b3b3;
+	padding-left: 0;
+	margin: 0;
+}
+
+.myproject .v-table-column-selector {
+	margin-top: -1.35em;
+}
+
+.myproject .v-table-cell-content {
+	border-right: none;
+	padding-right: 7px;
+}
+
+.myproject .v-table-caption-container .v-icon {
+	vertical-align: middle;
+	margin: -0.37em 2px 0 0;
+}
+
+.myproject .v-table-header-drag .v-icon {
+	vertical-align: middle;
+}
+
+.myproject .v-contextmenu .v-on, .myproject .v-contextmenu .v-off {
+	display: block;
+	background: transparent url(../chameleon/icons/bullet.png) no-repeat 0 4px;
+	padding-left: 12px;
+}
+
+.myproject .v-contextmenu .v-off {
+	background-image: none;
+	color: #666;
+}
+
+.myproject .v-contextmenu .gwt-MenuItem-selected .v-on {
+	background-image: url(../chameleon/icons/bullet-white.png);
+}
+
+.myproject .v-table-scrollposition {
+	font-size: 11.7px;
+	opacity: 0.85;
+	filter: alpha(opacity=85);
+}
+
+.myproject .v-table-small .v-table-caption-container, .myproject .v-table-small .v-table-body {
+	font-size: 11.05px;
+}
+
+.myproject .v-table-small .v-table-resizer, .myproject .v-table-small .v-table-header-wrap {
+	height: 1.2em;
+}
+
+.myproject .v-table-small .v-table-column-selector {
+	margin-top: -1.2em;
+}
+
+.myproject .v-table-big .v-table-caption-container, .myproject .v-table-big .v-table-body {
+	font-size: 15.6px;
+}
+
+.myproject .v-table-big .v-table-caption-container {
+	padding-top: 0.3em;
+}
+
+.myproject .v-table-big .v-table-resizer, .myproject .v-table-big .v-table-header-wrap {
+	height: 1.8em;
+}
+
+.myproject .v-table-big .v-table-column-selector {
+	margin-top: -1.5em;
+}
+
+.myproject .v-table-striped .v-table-row-odd {
+	background-color: #e6e6e6;
+}
+
+.myproject .v-table-strong .v-table-caption-container {
+	font-weight: bold;
+}
+
+.myproject .v-table-borderless .v-table-header-wrap, .myproject .v-table-borderless .v-table-body {
+	border: none;
+}
+
+.myproject div.v-table-borderless .v-table-body {
+	background: transparent;
+}
+
+.myproject input.v-textfield, .myproject textarea.v-textarea, .myproject .v-filterselect {
+	line-height: normal;
+	border: 1px solid #b3b3b3;
+	border-top-color: #808080;
+	border-color: rgba(0, 0, 0, 0.3);
+	border-top-color: rgba(0, 0, 0, 0.5);
+	background: #fff url(../chameleon/img/input-bg.png) repeat-x;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+	margin: 0;
+}
+
+.myproject input.v-textfield[type="text"], .myproject textarea.v-textarea, .myproject .v-filterselect {
+	padding-bottom: 0.1em;
+	padding-top: 0.1em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+}
+
+.myproject input.v-textfield[type="text"] {
+	height: 1.2em;
+}
+
+.myproject input.v-widget.v-textfield[type="text"], .myproject .v-filterselect {
+	height: 1.7em;
+}
+
+.myproject.v-app input.v-textfield, .myproject.v-app textarea.v-textarea, .myproject.v-app input.v-filterselect-input {
+	color: #222;
+}
+
+.v-ie .myproject input.v-textfield, .v-ie .myproject textarea.v-textarea, .v-ie .myproject .v-filterselect {
+	border-top-color: #808080;
+}
+
+.myproject.v-app input.v-textfield-prompt, .myproject.v-app textarea.v-textarea-prompt {
+	font-style: normal;
+	color: #999;
+}
+
+.myproject input.v-textfield-focus, .myproject textarea.v-textarea-focus {
+	background-color: #fffce1;
+}
+
+.myproject input.v-textfield-readonly, .myproject textarea.v-textarea-readonly {
+	border: none;
+	background: transparent;
+}
+
+.myproject.v-app input.v-textfield-small, .myproject.v-app textarea.v-textarea-small, .myproject .v-filterselect-small .v-filterselect-input {
+	font-size: 11.05px;
+}
+
+.myproject.v-app input.v-textfield-big, .myproject.v-app textarea.v-textarea-big, .myproject .v-filterselect-big .v-filterselect-input {
+	font-size: 15.6px;
+}
+
+.myproject input.v-textfield-big[type=text], .myproject .v-datefield-big input.v-datefield-textfield[type=text] {
+	padding: 0.3em;
+}
+
+.myproject textarea.v-textarea, .myproject .v-filterselect-big {
+	padding: 0.3em;
+}
+
+.myproject input.v-textfield-big.v-textfield-search, .myproject .v-filterselect-search.v-filterselect-big {
+	background-image: url(../chameleon/img/magnifier-big.png);
+	background-repeat: no-repeat;
+	background-position: 4px 50%;
+}
+
+.myproject input.v-textfield-big.v-textfield-search[type=text] {
+	padding-left: 26px;
+}
+
+.myproject .v-filterselect-search.v-filterselect-big {
+	padding-left: 26px;
+}
+
+.myproject input.v-textfield-search, .myproject .v-filterselect-search {
+	background-image: url(../chameleon/img/magnifier.png);
+	background-repeat: no-repeat;
+	background-position: 3px 50%;
+}
+
+.myproject input.v-textfield-search[type=text], .myproject .v-filterselect-search {
+	padding-left: 17px;
+}
+
+.myproject .v-datefield-button {
+	background: #dadada url(../chameleon/img/date-btn.png) repeat-x 50% 0;
+	border: 1px solid gray;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	width: 25px;
+	margin-right: -25px;
+	height: 1.7em;
+	padding: 0.2em 0;
+}
+
+.myproject input.v-datefield-textfield[type="text"] {
+	border-right: none;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	height: 1.7em;
+}
+
+.myproject .v-datefield-big .v-datefield-button {
+	padding: 0.3em 0;
+	height: 1.9em;
+	width: 32px;
+	background-image: url(../chameleon/img/date-btn-big.png);
+	font-size: 15.6px;
+}
+
+.myproject .v-datefield-big input.v-datefield-textfield[type="text"] {
+	height: 1.9em;
+	font-size: 15.6px;
+}
+
+.myproject .v-datefield-small .v-datefield-button {
+	height: 1.6em;
+	width: 19px;
+	background-position: 50% -2px;
+	font-size: 11.05px;
+}
+
+.myproject .v-datefield-small input.v-datefield-textfield[type="text"] {
+	height: 1.6em;
+	font-size: 11.05px;
+}
+
+.myproject .v-datefield-calendarpanel {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	height: auto !important;
+	font-size: 11.7px;
+}
+
+.myproject .v-datefield-month .v-datefield-textfield {
+	width: 6.4em;
+}
+
+.myproject .v-datefield-year .v-datefield-textfield {
+	width: 4.4em;
+}
+
+.myproject .v-datefield-year .v-datefield-calendarpanel-prevmonth, .myproject .v-datefield-year .v-datefield-calendarpanel-nextmonth {
+	display: none;
+}
+
+.myproject .v-datefield-calendarpanel-header td {
+	border-bottom: 1px solid #666;
+}
+
+.myproject .v-datefield-year .v-datefield-calendarpanel-header td, .myproject .v-datefield-month .v-datefield-calendarpanel-header td {
+	border-bottom: none;
+}
+
+.myproject td.v-datefield-calendarpanel-month {
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x 0 -1px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.myproject span.v-datefield-calendarpanel-month {
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	line-height: 2em;
+	height: 1.8em;
+}
+
+.myproject .v-datefield-year .v-datefield-calendarpanel-month {
+	width: 5.4em;
+}
+
+.myproject .v-datefield-month .v-datefield-calendarpanel-month, .myproject .v-datefield-day .v-datefield-calendarpanel-month, .myproject .v-datefield-full .v-datefield-calendarpanel-month {
+	width: 9.4em;
+}
+
+.myproject .v-datefield-popupcalendar {
+	min-width: 0;
+	padding-right: 25px;
+}
+
+.myproject .v-datefield-year .v-datefield-calendarpanel {
+	width: 8.4em;
+}
+
+.myproject td.v-datefield-calendarpanel-prevyear {
+	text-align: right;
+}
+
+.myproject td.v-datefield-calendarpanel-nextyear {
+	text-align: left;
+}
+
+.myproject .v-datefield-calendarpanel-header button {
+	font-size: 13px;
+	line-height: normal;
+	width: 100%;
+	padding: 0 0.8em;
+	height: 1.8em;
+	border: none;
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x 0 -1px;
+	overflow: hidden;
+	outline: none;
+	cursor: pointer;
+}
+
+.myproject .v-datefield-popup .v-datefield-calendarpanel-month, .myproject .v-datefield-popup .v-datefield-calendarpanel-header button {
+	background-position: 0 0;
+}
+
+.myproject .v-datefield-calendarpanel-header button:active {
+	background-image: url(../chameleon/img/grad-dark-top2.png);
+}
+
+.myproject .v-datefield-calendarpanel-prevyear button {
+	-webkit-border-top-left-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+}
+
+.myproject .v-datefield-calendarpanel-nextyear button {
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+}
+
+.myproject .v-datefield-year .v-datefield-calendarpanel-prevyear button, .myproject .v-datefield-month .v-datefield-calendarpanel-prevyear button {
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+}
+
+.myproject .v-datefield-year .v-datefield-calendarpanel-nextyear button, .myproject .v-datefield-month .v-datefield-calendarpanel-nextyear button {
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+}
+
+.myproject .v-datefield-calendarpanel-body, .myproject .v-datefield-calendarpanel-time {
+	text-align: center;
+	vertical-align: top;
+}
+
+.myproject .v-datefield-calendarpanel-body table {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.myproject .v-datefield-calendarpanel-weekdays td {
+	width: 14.2%;
+	overflow: hidden;
+	line-height: normal;
+	text-transform: uppercase;
+	vertical-align: top;
+}
+
+.myproject .v-datefield-calendarpanel-weeknumbers td {
+	width: 12.5%;
+}
+
+.myproject .v-datefield-calendarpanel-weekdays strong {
+	display: block;
+	text-align: right;
+	font-size: 10.4px;
+	padding: 0.3em 0.5em 0.35em 0;
+	height: 1.1em;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+	background: #c9c9c9 url(../chameleon/img/grad-dark-top2.png) repeat-x;
+	margin-bottom: 2px;
+}
+
+.myproject .v-datefield-calendarpanel .v-first strong {
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+}
+
+.myproject .v-datefield-calendarpanel .v-last strong {
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+}
+
+.myproject .v-datefield-popup .v-datefield-calendarpanel .v-first strong, .myproject .v-datefield-popup .v-datefield-calendarpanel .v-last strong {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+.myproject .v-datefield-calendarpanel-body td {
+	text-align: right;
+	height: 1.6em;
+}
+
+.myproject .v-datefield-calendarpanel-weeknumber {
+	padding: 0.5em 0.5em 0.35em 0;
+	font-size: 11.7px;
+}
+
+.myproject .v-datefield-calendarpanel-day, .myproject .v-datefield-calendarpanel-day-today {
+	padding: 0.15em 0.5em 0.15em 0;
+	display: block;
+	margin: 1px 1px 1px 0.3em;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.myproject .v-datefield-calendarpanel-day-focused, .myproject .v-datefield-calendarpanel-day:hover {
+	margin: 0 0 0 0.2em;
+	border: 1px solid #b3b3b3;
+	outline: none;
+}
+
+.myproject .v-datefield-calendarpanel-day-today {
+	border: none;
+	background: transparent url(../chameleon/img/grad-dark-top2.png) repeat-x;
+	margin: 0 0 0 0.2em;
+	font-weight: bold;
+	border: 1px solid #c9c9c9;
+}
+
+.myproject .v-datefield-calendarpanel-day-selected, .myproject .v-datefield-calendarpanel-day-selected:hover {
+	margin: 0 0 0 0.3em;
+	border: none;
+}
+
+.myproject .v-datefield-calendarpanel-time select {
+	padding: 0;
+	font-size: 11.7px;
+	margin: 0;
+}
+
+.myproject .v-inline-datefield-button {
+	background: #dadada url(../chameleon/img/date-btn.png) repeat-x 50% 0;
+	border: 1px solid gray;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	width: 25px;
+	margin-right: -25px;
+	height: 1.7em;
+	padding: 0.2em 0;
+}
+
+.myproject input.v-inline-datefield-textfield[type="text"] {
+	border-right: none;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	height: 1.7em;
+}
+
+.myproject .v-inline-datefield-big .v-inline-datefield-button {
+	padding: 0.3em 0;
+	height: 1.9em;
+	width: 32px;
+	background-image: url(../chameleon/img/date-btn-big.png);
+	font-size: 15.6px;
+}
+
+.myproject .v-inline-datefield-big input.v-inline-datefield-textfield[type="text"] {
+	height: 1.9em;
+	font-size: 15.6px;
+}
+
+.myproject .v-inline-datefield-small .v-inline-datefield-button {
+	height: 1.6em;
+	width: 19px;
+	background-position: 50% -2px;
+	font-size: 11.05px;
+}
+
+.myproject .v-inline-datefield-small input.v-inline-datefield-textfield[type="text"] {
+	height: 1.6em;
+	font-size: 11.05px;
+}
+
+.myproject .v-inline-datefield-calendarpanel {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	height: auto !important;
+	font-size: 11.7px;
+}
+
+.myproject .v-inline-datefield-month .v-inline-datefield-textfield {
+	width: 6.4em;
+}
+
+.myproject .v-inline-datefield-year .v-inline-datefield-textfield {
+	width: 4.4em;
+}
+
+.myproject .v-inline-datefield-year .v-inline-datefield-calendarpanel-prevmonth, .myproject .v-inline-datefield-year .v-inline-datefield-calendarpanel-nextmonth {
+	display: none;
+}
+
+.myproject .v-inline-datefield-calendarpanel-header td {
+	border-bottom: 1px solid #666;
+}
+
+.myproject .v-inline-datefield-year .v-inline-datefield-calendarpanel-header td, .myproject .v-inline-datefield-month .v-inline-datefield-calendarpanel-header td {
+	border-bottom: none;
+}
+
+.myproject td.v-inline-datefield-calendarpanel-month {
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x 0 -1px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.myproject span.v-inline-datefield-calendarpanel-month {
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	line-height: 2em;
+	height: 1.8em;
+}
+
+.myproject .v-inline-datefield-year .v-inline-datefield-calendarpanel-month {
+	width: 5.4em;
+}
+
+.myproject .v-inline-datefield-month .v-inline-datefield-calendarpanel-month, .myproject .v-inline-datefield-day .v-inline-datefield-calendarpanel-month, .myproject .v-inline-datefield-full .v-inline-datefield-calendarpanel-month {
+	width: 9.4em;
+}
+
+.myproject .v-inline-datefield-popupcalendar {
+	min-width: 0;
+	padding-right: 25px;
+}
+
+.myproject .v-inline-datefield-year .v-inline-datefield-calendarpanel {
+	width: 8.4em;
+}
+
+.myproject td.v-inline-datefield-calendarpanel-prevyear {
+	text-align: right;
+}
+
+.myproject td.v-inline-datefield-calendarpanel-nextyear {
+	text-align: left;
+}
+
+.myproject .v-inline-datefield-calendarpanel-header button {
+	font-size: 13px;
+	line-height: normal;
+	width: 100%;
+	padding: 0 0.8em;
+	height: 1.8em;
+	border: none;
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x 0 -1px;
+	overflow: hidden;
+	outline: none;
+	cursor: pointer;
+}
+
+.myproject .v-inline-datefield-popup .v-inline-datefield-calendarpanel-month, .myproject .v-inline-datefield-popup .v-inline-datefield-calendarpanel-header button {
+	background-position: 0 0;
+}
+
+.myproject .v-inline-datefield-calendarpanel-header button:active {
+	background-image: url(../chameleon/img/grad-dark-top2.png);
+}
+
+.myproject .v-inline-datefield-calendarpanel-prevyear button {
+	-webkit-border-top-left-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+}
+
+.myproject .v-inline-datefield-calendarpanel-nextyear button {
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+}
+
+.myproject .v-inline-datefield-year .v-inline-datefield-calendarpanel-prevyear button, .myproject .v-inline-datefield-month .v-inline-datefield-calendarpanel-prevyear button {
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+}
+
+.myproject .v-inline-datefield-year .v-inline-datefield-calendarpanel-nextyear button, .myproject .v-inline-datefield-month .v-inline-datefield-calendarpanel-nextyear button {
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+}
+
+.myproject .v-inline-datefield-calendarpanel-body, .myproject .v-inline-datefield-calendarpanel-time {
+	text-align: center;
+	vertical-align: top;
+}
+
+.myproject .v-inline-datefield-calendarpanel-body table {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.myproject .v-inline-datefield-calendarpanel-weekdays td {
+	width: 14.2%;
+	overflow: hidden;
+	line-height: normal;
+	text-transform: uppercase;
+	vertical-align: top;
+}
+
+.myproject .v-inline-datefield-calendarpanel-weeknumbers td {
+	width: 12.5%;
+}
+
+.myproject .v-inline-datefield-calendarpanel-weekdays strong {
+	display: block;
+	text-align: right;
+	font-size: 10.4px;
+	padding: 0.3em 0.5em 0.35em 0;
+	height: 1.1em;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+	background: #c9c9c9 url(../chameleon/img/grad-dark-top2.png) repeat-x;
+	margin-bottom: 2px;
+}
+
+.myproject .v-inline-datefield-calendarpanel .v-first strong {
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+}
+
+.myproject .v-inline-datefield-calendarpanel .v-last strong {
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+}
+
+.myproject .v-inline-datefield-popup .v-inline-datefield-calendarpanel .v-first strong, .myproject .v-inline-datefield-popup .v-inline-datefield-calendarpanel .v-last strong {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+.myproject .v-inline-datefield-calendarpanel-body td {
+	text-align: right;
+	height: 1.6em;
+}
+
+.myproject .v-inline-datefield-calendarpanel-weeknumber {
+	padding: 0.5em 0.5em 0.35em 0;
+	font-size: 11.7px;
+}
+
+.myproject .v-inline-datefield-calendarpanel-day, .myproject .v-inline-datefield-calendarpanel-day-today {
+	padding: 0.15em 0.5em 0.15em 0;
+	display: block;
+	margin: 1px 1px 1px 0.3em;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.myproject .v-inline-datefield-calendarpanel-day-focused, .myproject .v-inline-datefield-calendarpanel-day:hover {
+	margin: 0 0 0 0.2em;
+	border: 1px solid #b3b3b3;
+	outline: none;
+}
+
+.myproject .v-inline-datefield-calendarpanel-day-today {
+	border: none;
+	background: transparent url(../chameleon/img/grad-dark-top2.png) repeat-x;
+	margin: 0 0 0 0.2em;
+	font-weight: bold;
+	border: 1px solid #c9c9c9;
+}
+
+.myproject .v-inline-datefield-calendarpanel-day-selected, .myproject .v-inline-datefield-calendarpanel-day-selected:hover {
+	margin: 0 0 0 0.3em;
+	border: none;
+}
+
+.myproject .v-inline-datefield-calendarpanel-time select {
+	padding: 0;
+	font-size: 11.7px;
+	margin: 0;
+}
+
+.myproject .v-inline-datefield, .myproject .v-inline-datefield-calendarpanel-day {
+	line-height: 16px;
+}
+
+.myproject .v-filterselect {
+	overflow: hidden;
+	padding-right: 16px;
+}
+
+.myproject.v-app input.v-filterselect-input {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: transparent;
+	line-height: normal;
+}
+
+.myproject.v-app input.v-filterselect-input[type=text] {
+	padding: 0;
+}
+
+.myproject .v-filterselect-focus .v-filterselect-input, .myproject .v-filterselect .v-filterselect-input:focus {
+	outline: none;
+}
+
+.myproject .v-filterselect-big.v-filterselect-search {
+	padding-left: 22px;
+}
+
+.myproject .v-filterselect-button {
+	width: 16px;
+	margin-right: -16px;
+	height: 1.2em;
+	background-position: -5px -11px;
+	opacity: 0.4;
+}
+
+.myproject .v-filterselect-button:hover {
+	opacity: 0.7;
+}
+
+.myproject .v-filterselect-button:active {
+	opacity: 1;
+}
+
+.myproject .v-filterselect-small .v-filterselect-button {
+	height: 0.95em;
+	background-position: -5px -12px;
+}
+
+.myproject .v-filterselect-suggestpopup {
+	margin-top: 0.4em;
+}
+
+.myproject .v-filterselect-suggestmenu tr {
+	line-height: 1.4em;
+}
+
+.myproject.v-app .v-filterselect-suggestpopup-small td {
+	font-size: 11.05px;
+}
+
+.myproject.v-app .v-filterselect-suggestpopup-big td {
+	font-size: 14.3px;
+}
+
+.myproject .v-filterselect-big .v-filterselect-button {
+	height: 1.4em;
+	background-position: -5px -9px;
+}
+
+.myproject .v-filterselect-search .v-filterselect-button {
+	width: 0;
+	overflow: hidden;
+	margin-right: 0;
+}
+
+.myproject .v-filterselect-prompt .v-filterselect-input {
+	font-style: normal;
+}
+
+.myproject .v-filterselect-prevpage-off, .myproject .v-filterselect-nextpage-off, .myproject .v-filterselect-prevpage, .myproject .v-filterselect-nextpage {
+	border-style: solid;
+	border-width: 1px 0;
+	border-color: #b3b3b3;
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x;
+	height: 12px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.myproject .v-filterselect-prevpage:active, .myproject .v-filterselect-nextpage:active {
+	background-image: #c9c9c9 url(../chameleon/img/grad-dark-bottom2.png);
+	background-position: left bottom;
+}
+
+.myproject .v-filterselect-prevpage-off span, .myproject .v-filterselect-nextpage-off span, .myproject .v-filterselect-prevpage span, .myproject .v-filterselect-nextpage span {
+	display: block;
+	text-indent: -9999px;
+	height: 12px;
+	background: transparent url(../base/common/img/sprites.png) no-repeat 50% 3px;
+}
+
+.myproject .v-filterselect-nextpage-off span, .myproject .v-filterselect-nextpage span {
+	background-position: 50% -12px;
+}
+
+.myproject .v-filterselect-status {
+	font-size: 11.05px;
+	margin: 1px 0 -3px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.myproject .v-filterselect-suggestmenu .gwt-menuItem-selected {
+	background-image: url(../chameleon/img/grad-light-top2.png);
+	background-position: 0 -1px;
+}
+
+.myproject .v-filterselect-suggestpopup-small .v-filterselect-status {
+	font-size: 10.4px;
+}
+
+.myproject .v-filterselect-suggestpopup-big .v-filterselect-status {
+	font-size: 11.7px;
+}
+
+.myproject .v-select-small .v-select-select {
+	font-size: 10.4px;
+}
+
+.myproject .v-select-big .v-select-select {
+	font-size: 15.6px;
+}
+
+.myproject .v-filterselect-select-button {
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x;
+	position: relative;
+	padding: 0.3em 0.5em;
+}
+
+.myproject .v-filterselect-select-button .v-filterselect-input {
+	display: block;
+	width: 100% !important;
+	user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+
+.myproject .v-filterselect-select-button .v-filterselect-button {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-position: 100% -8px;
+}
+
+.myproject .v-tabsheet-spacertd div {
+	border-color: #b3b3b3;
+	border-left: none;
+}
+
+.myproject .v-tabsheet-tabitem {
+	border: none;
+	border-bottom: 1px solid #b3b3b3;
+	padding: 0;
+}
+
+.myproject .v-tabsheet-tabitem .v-caption {
+	padding: 0.2em 0.8em;
+	margin: 1px;
+	margin-bottom: 0;
+}
+
+.myproject .v-tabsheet-tabitem-selected {
+	background-color: #c9c9c9;
+	border: 1px solid #b3b3b3;
+	border-bottom: none;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	overflow: hidden;
+}
+
+.myproject .v-tabsheet-tabitem-selected .v-caption {
+	background: transparent url(../chameleon/img/grad-light-top.png) repeat-x;
+	margin: 0;
+	padding-bottom: 0.25em;
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-top-right-radius: 2px;
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-topright: 2px;
+}
+
+.myproject .v-tabsheet-content {
+	background: #fff;
+	border-color: #b3b3b3;
+}
+
+.myproject .v-tabsheet-deco {
+	height: 0;
+	background: transparent;
+	border-top: 1px solid #b3b3b3;
+}
+
+.myproject .v-tabsheet-caption-close {
+	width: 14px;
+	height: 15px;
+	overflow: hidden;
+	text-indent: -50px;
+	background: transparent url(../chameleon/img/close-btn.png) no-repeat 0.5em 0;
+	vertical-align: middle;
+	padding: 0 0 0 0.5em;
+	margin: 0.2em 0 0 0;
+}
+
+.myproject .v-tabsheet-caption-close:hover {
+	background-position: 0.5em -25px;
+}
+
+.myproject .v-tabsheet-caption-close:active {
+	background-position: 0.5em -50px;
+}
+
+.myproject .v-tabsheet-scroller {
+	height: 14px;
+	margin-top: -1.6em;
+	position: relative;
+	float: right;
+	background: #c9c9c9 url(../chameleon/img/grad-light-top.png) repeat-x;
+	border: 1px solid #b3b3b3;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+.myproject .v-tabsheet-scrollerPrev, .myproject .v-tabsheet-scrollerNext, .myproject .v-tabsheet-scrollerPrev-disabled, .myproject .v-tabsheet-scrollerNext-disabled, .myproject .v-tabsheet-scrollerPrev-disabled:active, .myproject .v-tabsheet-scrollerNext-disabled:active {
+	padding-top: 12px;
+	border: 1px solid #b3b3b3;
+	border-width: 0;
+	background: transparent url(../chameleon/img/tab-arrows.png) no-repeat 6px 50%;
+	width: 16px;
+	height: 14px;
+	overflow: hidden;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+.myproject .v-tabsheet-scroller button::-moz-focus-inner {
+	border: none;
+	padding: 0;
+}
+
+.myproject .v-tabsheet-scrollerNext, .myproject .v-tabsheet-scrollerNext-disabled, .myproject .v-tabsheet-scrollerNext-disabled:active {
+	background-position: -10px 50%;
+	border-left-width: 1px;
+}
+
+.myproject .v-tabsheet-scrollerPrev:hover, .myproject .v-tabsheet-scrollerNext:hover {
+	opacity: 0.75;
+	filter: alpha(opacity=75);
+}
+
+.myproject .v-tabsheet-scrollerPrev:active, .myproject .v-tabsheet-scrollerNext:active {
+	opacity: 1;
+	filter: none;
+}
+
+.myproject .v-tabsheet-scrollerPrev-disabled, .myproject .v-tabsheet-scrollerNext-disabled, .myproject .v-tabsheet-scrollerPrev-disabled:active, .myproject .v-tabsheet-scrollerNext-disabled:active {
+	opacity: 0.1;
+	filter: alpha(opacity=10);
+}
+
+.myproject .v-tabsheet-open-only-closable .v-tabsheet-caption-close {
+	visibility: hidden;
+}
+
+.myproject .v-tabsheet-open-only-closable .v-tabsheet-tabitem-selected .v-tabsheet-caption-close {
+	visibility: visible;
+}
+
+.myproject .v-tabsheet-borderless .v-tabsheet-content-borderless, .myproject .v-tabsheet-deco-borderless {
+	border: none;
+	background: transparent;
+}
+
+.myproject .v-tabsheet-tabs-borderless .v-tabsheet-tabitem-selected, .myproject .v-tabsheet-tabs-borderless .v-tabsheet-tabitem-selected .v-caption {
+	background-color: transparent;
+}
+
+.myproject .v-tree-node-caption {
+	margin-left: 16px;
+}
+
+.myproject .v-tree-node span {
+	padding: 0.1em 0.3em;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.myproject .v-tree-node-children {
+	padding-left: 16px;
+}
+
+.myproject .v-tree-node-selected span {
+	background-color: #333;
+}
+
+.myproject .v-tree-connectors .v-tree-node-caption {
+	padding-bottom: 1px;
+}
+
+.myproject .v-window {
+	border-radius: 3px;
+}
+
+.myproject .v-window-closebox, .myproject .v-window-restorebox, .myproject .v-window-maximizebox {
+	width: 14px;
+	height: 15px;
+	overflow: hidden;
+	vertical-align: middle;
+	margin: 0;
+	top: 0.3em;
+	z-index: 2;
+}
+
+.myproject .v-window-closebox:hover, .myproject .v-window-restorebox:hover, .myproject .v-window-maximizebox:hover {
+	background-position: 0 -25px;
+}
+
+.myproject .v-window-closebox:active, .myproject .v-window-restorebox:active, .myproject .v-window-maximizebox:active {
+	background-position: 0 -50px;
+}
+
+.myproject .v-window-closebox {
+	text-indent: -50px;
+	background: transparent url(../chameleon/img/close-btn.png) no-repeat;
+	right: 0.4em;
+}
+
+.myproject .v-window-restorebox, .myproject .v-window-maximizebox {
+	right: 1.8em;
+}
+
+.myproject .v-window-restorebox {
+	background: transparent url(../chameleon/img/restore.png) no-repeat;
+}
+
+.myproject .v-window-maximizebox {
+	background: transparent url(../chameleon/img/maximize.png) no-repeat;
+}
+
+.myproject .v-window {
+	background-image: none;
+}
+
+.myproject .v-window-wrap {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	background-image: url(../chameleon/img/grad-light-top.png);
+	background-repeat: repeat-x;
+}
+
+.myproject .v-window-outerheader {
+	padding: 0.2em 1.7em 0.5em 1.2em;
+	height: auto;
+	text-align: center;
+}
+
+.myproject .v-window-header {
+	font-weight: normal;
+}
+
+.myproject .v-window-footer {
+	height: 0;
+	position: static;
+}
+
+.myproject .v-window-resizebox {
+	background: transparent url(../chameleon/img/resize.png) no-repeat;
+	width: 14px;
+	height: 14px;
+	bottom: 0;
+}
+
+.myproject .v-horizontallayout-segment .v-button {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	border-left-width: 0;
+	zoom: 1;
+	overflow: visible;
+}
+
+.myproject .v-horizontallayout-segment .v-button .v-button-wrap {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	zoom: 1;
+}
+
+.myproject .v-horizontallayout-segment .first {
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-left-width: 1px;
+}
+
+.myproject .v-horizontallayout-segment .first .v-button-wrap {
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.myproject .v-horizontallayout-segment .last {
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.myproject .v-horizontallayout-segment .last .v-button-wrap {
+	-webkit-border-top-right-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	-moz-border-radius-topright: 2px;
+	-moz-border-radius-bottomright: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.myproject .sidebar-menu * {
+	white-space: normal;
+}
+
+.myproject .sidebar-menu .v-label {
+	font-size: 11.05px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.03em;
+	padding: 1em 0.9em 0.3em;
+	text-shadow: 0 1px 0 white;
+}
+
+.myproject .sidebar-menu .v-nativebutton {
+	width: 100%;
+	padding: 0.1em 1.1em;
+	border: none;
+	background: transparent;
+	text-align: left;
+}
+
+.myproject .sidebar-menu .v-nativebutton:focus {
+	outline: none;
+	font-weight: bold;
+}
+
+.myproject .sidebar-menu .tab-selected, .myproject .sidebar-menu .selected {
+	font-weight: bold;
+	background-color: #333;
+	background-image: url(../chameleon/img/grad-light-top2.png);
+	background-position: 0 -1px;
+	color: #fff;
+}
+
+.myproject .sidebar-menu .tab-selected:focus, .myproject .sidebar-menu .selected:focus {
+	outline: none;
+}
+
+.myproject .sidebar-menu .v-nativebutton::-moz-focus-inner {
+	border: none;
+	padding: 0;
+}
+
+.myproject .v-csslayout-toolbar {
+	background: transparent url(../chameleon/img/grad-light-top.png) repeat-x;
+	border: 1px solid #b3b3b3;
+	border-width: 1px 0;
+}
+
+.myproject .v-csslayout-toolbar .v-csslayout-margin {
+	margin: 3px 0.3em 2px;
+	padding-bottom: 1px;
+	overflow: hidden;
+}
+
+.myproject .v-csslayout-toolbar .v-button, .myproject .v-csslayout-toolbar .segment {
+	margin-right: 2px;
+	float: left;
+}
+
+.myproject .v-csslayout-toolbar .segment .v-button {
+	margin-right: 0;
+}
+
+.myproject .mystyle {
+	border: 2px solid green;
+}
+
+.myproject .v-Notification.mystyle {
+	background: #FFFF00;
+	border: 10px solid #C00000;
+	color: black;
+}
