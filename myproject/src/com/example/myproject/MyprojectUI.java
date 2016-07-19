@@ -8,17 +8,17 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.Locale;
+import java.util.Map;
+import java.util.Map.Entry;
 
 import javax.imageio.ImageIO;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-import javax.servlet.annotation.WebServlet;
 
 import com.example.myproject.utils.Utils;
 import com.vaadin.annotations.Theme;
-import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.BrowserWindowOpener;
 import com.vaadin.server.ClassResource;
 import com.vaadin.server.FileResource;
@@ -28,7 +28,6 @@ import com.vaadin.server.ThemeResource;
 import com.vaadin.server.UserError;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinService;
-import com.vaadin.server.VaadinServlet;
 import com.vaadin.server.VaadinSession;
 import com.vaadin.shared.Position;
 import com.vaadin.ui.Button;
@@ -58,27 +57,10 @@ import com.vaadin.ui.UI;
 //@Theme("runo")
 //@Theme("valo")
 public class MyprojectUI extends UI {
+	public static final long serialVersionUID = 1L;
+	
 	FormLayout layout = new FormLayout();
 
-//	@WebServlet(value = "/*", asyncSupported = true)
-	@WebServlet(value = {"/MyprojectUI/*", "/VAADIN/*"}, asyncSupported = true)
-	@VaadinServletConfiguration(productionMode = false, ui = MyprojectUI.class)
-	public static class Servlet extends VaadinServlet {
-		@Override
-		protected void servletInitialized() throws ServletException {
-			super.servletInitialized();
-			Utils.log("(MyprojectUI.Servlet servletInitialized) ");
-		}
-		@Override
-		public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {
-			super.service(request, response);
-//			Utils.log("(MyprojectUI.Servlet service) ");
-//			Enumeration<String> enumer = request.getAttributeNames();
-//			while(enumer.hasMoreElements()) {
-//				Utils.log("(MyprojectUI.Servlet service) " + enumer.nextElement());
-//			}
-		}
-	}
 
 	@Override
 	protected void init(VaadinRequest request) {
@@ -89,6 +71,26 @@ public class MyprojectUI extends UI {
 
 		Label label = new Label("Hello, your fragment is " + getPage().getUriFragment());
         layout.addComponent(label);		
+        
+        Map<String, String[]> parameter = request.getParameterMap();
+        for (Entry<String, String[]> entry : parameter.entrySet()) {
+        	Utils.log("(MyprojectUI init) entry key   = " + entry.getKey());
+        	Utils.log("(MyprojectUI init) entry value = " + Arrays.asList(entry.getValue()));
+        }
+        
+        
+        
+        
+        VaadinSession session = VaadinSession.getCurrent();
+        Collection<UI> uis = session.getUIs();
+        Utils.log("(MyprojectUI init) uis.size() = " +uis.size());
+        for (Iterator<UI> iterator = uis.iterator(); iterator.hasNext();) {
+			UI ui = iterator.next();
+			Utils.log("(MyprojectUI init) UI caption     = " +  ui.getCaption());
+			Utils.log("(MyprojectUI init) UI description = " +  ui.getDescription());
+		}
+        
+        
         
 		kapitel25(layout);
 		
@@ -111,6 +113,8 @@ public class MyprojectUI extends UI {
 		kapitel46(layout);
 		kapitel461(layout);
 		kapitel462(layout);
+		
+		kapitel477(layout);
 	}
 
 	
@@ -536,6 +540,24 @@ public class MyprojectUI extends UI {
 
 				// Show it in the page
 				notif.show(Page.getCurrent());
+			}
+		});
+		
+		layout.addComponent(button);
+	}
+
+
+	// Kapitel 4.7.7 Closing a session 
+	private void kapitel477(FormLayout layout) {
+		Button button = new Button("Redirect");
+		
+		button.addClickListener(new Button.ClickListener() {
+			public void buttonClick(ClickEvent event) {
+				// Redirect from the page
+				getUI().getPage().setLocation("/myproject/MyHierarchicalUI");
+				
+				// Close the Session
+				getSession().close();
 			}
 		});
 		

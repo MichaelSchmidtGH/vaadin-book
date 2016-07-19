@@ -2,15 +2,9 @@ package com.example.myproject;
 
 
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-
-import com.example.myproject.utils.Utils;
-import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.data.util.HierarchicalContainer;
 import com.vaadin.data.util.IndexedContainer;
 import com.vaadin.server.VaadinRequest;
-import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Table;
@@ -21,15 +15,15 @@ import com.vaadin.ui.VerticalLayout;
 @SuppressWarnings("serial")
 public class MyHierarchicalUI extends UI {
 
-	@WebServlet(value = {"/MyHierarchicalUI/*"}, asyncSupported = true)
-	@VaadinServletConfiguration(productionMode = false, ui = MyHierarchicalUI.class)
-	public static class Servlet extends VaadinServlet {
-		@Override
-		protected void servletInitialized() throws ServletException {
-			super.servletInitialized();
-			Utils.log("(MyHierarchicalUI.Servlet servletInitialized) ");
-		}
-	}
+//	@WebServlet(value = {"/MyHierarchicalUI/*"}, asyncSupported = true)
+//	@VaadinServletConfiguration(productionMode = false, ui = MyHierarchicalUI.class)
+//	public static class MyHierarchicalUIServlet extends VaadinServlet {
+//		@Override
+//		protected void servletInitialized() throws ServletException {
+//			super.servletInitialized();
+//			Utils.log("(MyHierarchicalUI.MyHierarchicalUIServlet servletInitialized) ");
+//		}
+//	}
 
 	@Override
 	protected void init(VaadinRequest request) {
