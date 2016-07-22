@@ -47,6 +47,7 @@ import com.vaadin.ui.UI;
 
 /**
  * Book of Vaadin.
+ * Vaadin 7 Edition - 4th Revision.
  **/
 @SuppressWarnings("serial")
 @Theme("myproject")
