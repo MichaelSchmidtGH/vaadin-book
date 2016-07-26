@@ -6561,6 +6561,11 @@ body .myproject.v-app .v-app-loading {
 
 .myproject .mystyle {
 	border: 2px solid green;
+	font-family: fantasy;
+	font-style: italic;
+	font-size: 25px;
+	font-weight: bolder;
+	line-height: 30px;
 }
 
 .myproject .v-Notification.mystyle {

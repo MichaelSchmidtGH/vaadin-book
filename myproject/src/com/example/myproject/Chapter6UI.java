@@ -1,28 +1,36 @@
 package com.example.myproject;
 
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.charset.Charset;
-import java.nio.charset.CharsetDecoder;
-import java.nio.charset.CharsetEncoder;
 import java.util.Locale;
 
 import com.example.myproject.utils.Utils;
 import com.vaadin.annotations.Theme;
+import com.vaadin.data.Item;
+import com.vaadin.data.Property;
+import com.vaadin.data.Validator;
+import com.vaadin.data.Validator.InvalidValueException;
+import com.vaadin.data.util.IndexedContainer;
+import com.vaadin.data.validator.StringLengthValidator;
 import com.vaadin.server.AbstractErrorMessage.ContentMode;
 import com.vaadin.server.ErrorMessage.ErrorLevel;
 import com.vaadin.server.FontAwesome;
+import com.vaadin.server.Sizeable;
 import com.vaadin.server.ThemeResource;
 import com.vaadin.server.UserError;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.shared.ui.datefield.Resolution;
 import com.vaadin.ui.Button;
+import com.vaadin.ui.Button.ClickEvent;
+import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.CustomComponent;
 import com.vaadin.ui.FormLayout;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.InlineDateField;
+import com.vaadin.ui.Label;
+import com.vaadin.ui.Notification;
+import com.vaadin.ui.OptionGroup;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
+import com.vaadin.ui.Upload;
 import com.vaadin.ui.VerticalLayout;
 
 
@@ -57,6 +65,8 @@ public class Chapter6UI extends UI {
         
 		kapitel621(layout);
 		kapitel63(layout);
+		kapitel64(layout);
+		kapitel65(layout);
 		
 	}
 
@@ -168,39 +178,192 @@ public class Chapter6UI extends UI {
 		readonly.setReadOnly(true);
 		layout.addComponent(readonly);
 		
+		try {
+			readonly.setValue("new value");
+		} catch (Property.ReadOnlyException e) {
+			Utils.log("(Chapter6UI kapitel63) Property.ReadOnlyException beim Setzen von Feld \"readonly\" aufgetreten");
+		}
+		
+		// 6.3.7 Style Name
+		Label label = new Label("This text has a lot of style");
+		label.addStyleName("mystyle");
+		layout.addComponent(label);
+		Utils.log("(Chapter6UI kapitel63) styles = " + label.getStyleName());
+		
+		// 6.3.8 Visible
+		TextField visible1 = new TextField("Next comes an invisible TextField");
+		layout.addComponent(visible1);
 
-		// BEGIN - Exkurs Umwandlung UTF-8 nach Latin-1 und zurück
-		// Funktioniert so nicht. Funktionierendes Beispiel suchen. 
-		CharsetEncoder encoder = Charset.forName("UTF-8").newEncoder();
-		CharBuffer in  = CharBuffer.allocate(100);
-		in.put("äöüÄÖÜß!§$%&/()=?\\}][{²@µ_-.:,;#'+*~´`|<>");
-		ByteBuffer out = ByteBuffer.allocate(100);
-		
-		encoder.reset();
-		Utils.log("(Chapter6UI kapitel63) in.remaining  = " + in.remaining());
-		Utils.log("(Chapter6UI kapitel63) out.remaining = " + out.remaining());
-		encoder.encode(in, out, true);
-		encoder.flush(out);
-		Utils.log("(Chapter6UI kapitel63) in.remaining  = " + in.remaining());
-		Utils.log("(Chapter6UI kapitel63) out.remaining = " + out.remaining());
-		
-		in.rewind();
-		Utils.log("(Chapter6UI kapitel63) in  (UTF-8) byte  = " + in.get());
+		TextField invisible = new TextField("No-see-um");
+		invisible.setValue("You can't see this!");
+		invisible.setVisible(false);
+		layout.addComponent(invisible);
 
-		out.rewind();
-		Utils.log("(Chapter6UI kapitel63) out.remaining = " + out.remaining());
-		byte[] dst = new byte[100];
-		out.get(dst);
-		String outString = new String(dst);
-		Utils.log("(Chapter6UI kapitel63) outString = " + outString);
-//		while(out.hasRemaining()) {
-//			Utils.log("(Chapter6UI kapitel63) out (Latin1) byte = " + out.get());
-//		}
+		TextField visible2 = new TextField("After the invisible TextField");
+		layout.addComponent(visible2);
 		
+		Button visibleButton = new Button("Make it visible");
+		visibleButton.addClickListener(new ClickListener() {
+			@Override
+			public void buttonClick(ClickEvent event) {
+				invisible.setVisible(true);
+			}
+		});
+		layout.addComponent(visibleButton);
 		
-		CharsetDecoder decoder = Charset.forName("UTF-8").newDecoder();
-		// END - Exkurs Umwandlung UTF-8 nach Latin-1 und zurück
+		Button invisibleButton = new Button("Make it invisible");
+		invisibleButton.addClickListener(new ClickListener() {
+			@Override
+			public void buttonClick(ClickEvent event) {
+				invisible.setVisible(false);
+			}
+		});
+		layout.addComponent(invisibleButton);
 		
+		// 6.3.9 Sizing Components
+		TextField mycomponent = new TextField("mycomponent");
+		layout.addComponent(mycomponent);
+		mycomponent.setWidth(100, Sizeable.UNITS_PERCENTAGE);
+		mycomponent.setWidth(400, Sizeable.UNITS_PIXELS);
+		mycomponent.setWidth("80%");
+		mycomponent.setHeight("200px");
+		
+		// 6.3.10 Managing Input Focus
+		Upload u = new Upload();
+		layout.addComponent(u);
+		u.setTabIndex(2);				// Bekommt den Fokus erst nach allen anderen Feldern (Subdialog/Subpanel?)
+		
+		TextField tab1 = new TextField("Tab 1");
+		TextField tab2 = new TextField("Tab 2");
+		TextField tab3 = new TextField("Tab 3");
+		tab1.setTabIndex(1);
+		tab2.setTabIndex(2);
+		tab3.setTabIndex(3);
+		layout.addComponent(tab1);
+		layout.addComponent(tab2);
+		layout.addComponent(tab3);
 	}
 	
+	// Kapitel 6.4 Field Components
+	private void kapitel64(FormLayout layout) {
+		// 6.4.1 Field Interface
+		TextField field1 = new TextField("Textfeld 1 (required)");
+		field1.setRequired(true);
+		field1.setRequiredError("Hier muss ein Wert eingegeben werden!");
+		layout.addComponent(field1);
+		
+		// 6.4.4 Field Buffering
+		field1.setBuffered(true);
+		field1.setValidationVisible(true);
+		TextField field2 = new TextField("Textfeld 2 (data source for field 1)");
+		layout.addComponent(field2);
+		field1.setPropertyDataSource(field2);
+		field2.setValue("Value");
+		Button commit = new Button("Commit", new Button.ClickListener() {
+			@Override
+			public void buttonClick(ClickEvent event) {
+				try {
+					field1.commit();
+				} catch (InvalidValueException e) {
+					Notification.show(e.getMessage());
+				}
+				Utils.log("(Chapter6UI.kapitel64(...).new ClickListener() {...} buttonClick) value = " + field2.getValue());
+			}
+		});
+		layout.addComponent(commit);
+		
+		// 6.4.5 Field Validation
+		TextField field = new TextField("Name 1");
+		field.addValidator(new StringLengthValidator("The name must be 1-10 letters (was {0})", 1, 10, true));
+		field.setNullRepresentation("");
+		field.setNullSettingAllowed(false);
+		field.setBuffered(true);
+		field.setValidationVisible(true);
+		field.setInvalidCommitted(false);
+		Button commit1 = new Button("Commit 1", new Button.ClickListener() {
+			@Override
+			public void buttonClick(ClickEvent event) {
+				try {
+					Utils.log("(Chapter6UI.kapitel64(...).new ClickListener() {...} buttonClick 1) vor commit");
+					Utils.log("(Chapter6UI.kapitel64(...).new ClickListener() {...} buttonClick 1) value = >" + field.getValue() + "<");
+					field.validate();
+					field.commit();
+					Utils.log("(Chapter6UI.kapitel64(...).new ClickListener() {...} buttonClick 1) nach commit");
+				} catch (InvalidValueException e) {
+					Notification.show(e.getMessage());
+				}
+			}
+		});
+		layout.addComponent(field);
+		layout.addComponent(commit1);
+		
+		// Automatic Validation
+		TextField field3 = new TextField("Name");
+		field3.addValidator(new StringLengthValidator("The name must be 1-10 letters (was {0})", 1, 10, true));
+		field3.setImmediate(true);
+		field3.setNullRepresentation("");
+		field3.setNullSettingAllowed(true);
+		layout.addComponent(field3);
+		
+		
+		// Explicit Validation
+		// A field with automatic validation disabled
+		final TextField field4 = new TextField("Name");
+		field4.setNullRepresentation("");
+		field4.setNullSettingAllowed(true);
+		field4.setValidationVisible(false);
+		layout.addComponent(field4);
+		// Define validation as usual
+		field4.addValidator(new StringLengthValidator("The name must be 1-10 letters (was {0})", 1, 10, true));
+		// Run validation explicitly
+		Button validate = new Button("Validate");
+		validate.addClickListener(new ClickListener() {
+			@Override
+			public void buttonClick(ClickEvent event) {
+				field4.setValidationVisible(false);
+				try {
+					field4.validate();
+				} catch (InvalidValueException e) {
+					Notification.show(e.getMessage());
+					field4.setValidationVisible(true);
+				}
+			}
+		});
+		layout.addComponent(validate);
+		
+		
+		// Implementing a Custom Validator
+		class MyValidator implements Validator {
+			@Override
+			public void validate(Object value) throws InvalidValueException {
+				if (!(value instanceof String && ((String)value).equals("hello"))) {
+					throw new InvalidValueException("You're impolite");
+				}
+			}
+		}
+		final TextField field5 = new TextField("Say hello");
+		field5.addValidator(new MyValidator());
+		field5.setImmediate(true);
+		layout.addComponent(field5);
+	}
+
+	// Kapitel 6.5 Selection Components
+	private void kapitel65(FormLayout layout) {
+		// 6.5.1 Binding Selection Components to Data
+		// Have a container data source of some kind
+		IndexedContainer container = new IndexedContainer();
+		container.addContainerProperty("name", String.class, null);
+		Item i = container.addItem("Name 1");
+		i.getItemProperty("name").setValue("1");
+		i = container.addItem("Name 2");
+		i.getItemProperty("name").setValue("2");
+		i = container.addItem("Name 3");
+		i.getItemProperty("name").setValue("3");
+		//...
+		// Create a selection component bound to the container
+		OptionGroup group = new OptionGroup("My Select", container);
+		
+		layout.addComponent(group);
+	}
+
 }
