@@ -1,31 +1,41 @@
 package com.example.myproject;
 
+import java.io.Serializable;
 import java.util.Locale;
 
 import com.example.myproject.utils.Utils;
 import com.vaadin.annotations.Theme;
+import com.vaadin.client.ui.Icon;
 import com.vaadin.data.Item;
 import com.vaadin.data.Property;
+import com.vaadin.data.Property.ValueChangeEvent;
 import com.vaadin.data.Validator;
 import com.vaadin.data.Validator.InvalidValueException;
+import com.vaadin.data.util.BeanItemContainer;
 import com.vaadin.data.util.IndexedContainer;
 import com.vaadin.data.validator.StringLengthValidator;
 import com.vaadin.server.AbstractErrorMessage.ContentMode;
 import com.vaadin.server.ErrorMessage.ErrorLevel;
 import com.vaadin.server.FontAwesome;
+import com.vaadin.server.Page;
 import com.vaadin.server.Sizeable;
 import com.vaadin.server.ThemeResource;
 import com.vaadin.server.UserError;
 import com.vaadin.server.VaadinRequest;
+import com.vaadin.shared.Position;
 import com.vaadin.shared.ui.datefield.Resolution;
+import com.vaadin.ui.AbstractSelect;
+import com.vaadin.ui.AbstractSelect.ItemCaptionMode;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Button.ClickListener;
+import com.vaadin.ui.ComboBox;
 import com.vaadin.ui.CustomComponent;
 import com.vaadin.ui.FormLayout;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.InlineDateField;
 import com.vaadin.ui.Label;
+import com.vaadin.ui.ListSelect;
 import com.vaadin.ui.Notification;
 import com.vaadin.ui.OptionGroup;
 import com.vaadin.ui.TextField;
@@ -353,17 +363,198 @@ public class Chapter6UI extends UI {
 		// Have a container data source of some kind
 		IndexedContainer container = new IndexedContainer();
 		container.addContainerProperty("name", String.class, null);
-		Item i = container.addItem("Name 1");
-		i.getItemProperty("name").setValue("1");
-		i = container.addItem("Name 2");
-		i.getItemProperty("name").setValue("2");
-		i = container.addItem("Name 3");
-		i.getItemProperty("name").setValue("3");
+		Item item = container.addItem("Name 1");			// "Name 1" = Item-ID und Default-Caption
+		item.getItemProperty("name").setValue("1");
+		item = container.addItem("Name 2");
+		item.getItemProperty("name").setValue("2");
+		item = container.addItem("Name 3");
+		item.getItemProperty("name").setValue("3");
+		
 		//...
 		// Create a selection component bound to the container
 		OptionGroup group = new OptionGroup("My Select", container);
-		
+		group.select("Name 1");
 		layout.addComponent(group);
+
+		// 6.5.2 Adding New Items
+		// Create a selection component
+		ComboBox select = new ComboBox("My ComboBox");
+		// Add items with given item IDs
+		select.addItem("Mercury");		// "Mercury" = Item-ID und Default-Caption
+		select.addItem("Venus");
+		select.addItem("Earth");
+		layout.addComponent(select);
+		
+		// Create a selection component
+		ComboBox select2 = new ComboBox("My Select");
+		// Add an item with a generated ID
+		Object itemId = select2.addItem();
+		select2.setItemCaption(itemId, "The Sun");
+		// Select the item
+		select2.setValue(itemId);
+		layout.addComponent(select2);
+		
+		// 6.5.3 Item Captions
+		// ItemCaptionMode = EXPLICIT_DEFAULTS_ID
+		// Create a selection component
+		ComboBox select3 = new ComboBox("Moons of Mars");
+		select3.setItemCaptionMode(ItemCaptionMode.EXPLICIT_DEFAULTS_ID);	// EXPLICIT_DEFAULTS_ID ist Default
+		// Use the item ID also as the caption of this item
+		select3.addItem(new Integer(1));
+		// Set item caption for this item explicitly
+		select3.addItem(2); // same as "new Integer(2)"
+		select3.setItemCaption(2, "Deimos");
+		layout.addComponent(select3);
+		
+		
+		// ItemCaptionMode = ID
+		ComboBox select4 = new ComboBox("Inner Planets");
+		select4.setItemCaptionMode(ItemCaptionMode.ID);
+		// A class that implements toString()
+		class PlanetId extends Object implements Serializable {
+			String planetName;
+			PlanetId (String name) {
+				planetName = name;
+			}
+			public String toString () {
+				return "The Planet " + planetName;
+			}
+		}
+		// Use such objects as item identifiers
+		String planets[] = {"Mercury", "Venus", "Earth", "Mars"};
+		for (int i = 0; i < planets.length; i++) {
+			select4.addItem(new PlanetId(planets[i]));
+		}
+		layout.addComponent(select4);
+		
+		
+		// ItemCaptionMode = PROPERTY
+		ComboBox select5 = captionproperty();
+		layout.addComponent(select5);
+		
+	
+		// 6.5.4 Getting and Setting Selection
+		Button selectButton = new Button("Select Mars", event -> {
+			Planet oldValue = (Planet) select5.getValue();
+			
+			Notification notif = new Notification("Alter Wert: " + oldValue.getName());
+			notif.setPosition(Position.BOTTOM_CENTER);
+			notif.setDelayMsec(1000);
+			notif.show(Page.getCurrent());
+			
+			BeanItemContainer<Planet> c = (BeanItemContainer<Planet>) select5.getContainerDataSource();
+			Planet p = c.getIdByIndex(3);
+			select5.setValue(p);
+			if (select5.isReadOnly()) {
+				select5.setReadOnly(false);
+			} else {
+				select5.setReadOnly(true);
+			}
+		});
+		layout.addComponent(selectButton);
+		
+		
+		// 6.5.5 Handling Selection Changes
+		select5.addValueChangeListener(event -> {
+			Planet itemId1 = (Planet) event.getProperty().getValue();	// The ItemID is a Planet instance
+			Utils.log("(Chapter6UI kapitel65) itemId = " + itemId1);
+			if (itemId1 != null) {
+				Notification.show(itemId1.getName());
+				Utils.log("(Chapter6UI kapitel65) Neuer Wert = " + itemId1.getName());
+			}
+		});
+		
+		
+		// 6.5.6. Allowing Adding New Items
+		select.setNewItemsAllowed(true);
+		select.setImmediate(true);
+		select2.setNewItemsAllowed(true);
+		select2.setImmediate(true);
+		select3.setNewItemsAllowed(true);
+		select3.setImmediate(true);
+		select4.setNewItemsAllowed(true);
+		select4.setImmediate(true);
+		select5.setNewItemsAllowed(true);
+		select5.setImmediate(true);
+		select5.setNewItemHandler(new AbstractSelect.NewItemHandler() {
+			@Override
+			public void addNewItem(String newItemCaption) {
+				if (select5.isReadOnly()) {
+					Notification.show("Dropdown ist ReadOnly!", Notification.Type.WARNING_MESSAGE);
+					return;
+				}
+				int size = select5.size();
+				select5.addItem(new Planet(size, newItemCaption));
+			}
+		});
+		
+		
+		// 6.5.7. Multiple Selection
+		// A selection component with some items
+		ListSelect select6 = new ListSelect("My Selection");
+		select6.addItems("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune");
+		// Multiple selection mode
+		select6.setMultiSelect(true);
+		// Feedback on value changes
+		select6.addValueChangeListener(
+		new Property.ValueChangeListener() {
+			public void valueChange(ValueChangeEvent event) {
+				// Some feedback
+				String value = event.getProperty().getValue().toString();
+				Notification.show("Selected: " + value, Notification.Type.WARNING_MESSAGE);
+			}
+		});
+		select6.setImmediate(true);
+		layout.addComponent(select6);
+
+	
+	
+		// 6.5.8. Item Icons
+		group.addContainerProperty("icon", ThemeResource.class, new ThemeResource("icons/user.png"));
+		group.setItemIconPropertyId("icon");
+		group.setItemIcon("Name 1", new ThemeResource("../sampler/icons/comment_yellow.gif"));
+	
 	}
 
+	
+	
+	// Fortsetzung Kapitel 6.5.3 Item Captions
+	/** A bean with a "name" property. */
+	public class Planet implements Serializable {
+		private static final long serialVersionUID = 1L;
+		
+		private int id;
+		private String name;
+		public Planet(int id, String name) {
+			this.id = id;
+			this.name = name;
+		}
+		public String getName() {
+			return name;
+		}
+		public Integer getId() {
+			return id;
+		}
+	}
+	private ComboBox captionproperty() {
+		// Have a bean container to put the beans in
+		BeanItemContainer<Planet> container = new BeanItemContainer<Planet>(Planet.class);
+		// Put some example data in it
+		container.addItem(new Planet(1, "Mercury"));
+		Planet venus = new Planet(2, "Venus");
+		container.addItem(venus);
+		container.addItem(new Planet(3, "Earth"));
+		container.addItem(new Planet(4, "Mars"));
+		// Create a selection component bound to the container
+		ComboBox select = new ComboBox("Planets", container);
+		// Set the caption mode to read the caption directly
+		// from the 'name' property of the bean
+		select.setItemCaptionMode(ItemCaptionMode.PROPERTY);
+		select.setItemCaptionPropertyId("name");
+		select.setValue(venus);
+		return select;
+	}
+	
+	
+	
 }
