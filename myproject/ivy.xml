@@ -43,5 +43,9 @@
 		<!-- Compiler for custom widget sets. Should not be deployed -->
 		<dependency org="com.vaadin" name="vaadin-client-compiler"
 			rev="&vaadin.version;" conf="widgetset-compile->default" />
+			
+		<!-- Spring JDBC -->
+		<dependency org="org.springframework" name="spring-jdbc" rev="latest.release" />
+
 	</dependencies>
 </ivy-module>

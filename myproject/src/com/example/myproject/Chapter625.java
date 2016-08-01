@@ -1,5 +1,7 @@
 package com.example.myproject;
 
+import java.io.File;
+
 import com.example.myproject.utils.Utils;
 import com.vaadin.annotations.Theme;
 import com.vaadin.event.Action;
@@ -22,6 +24,7 @@ import com.vaadin.ui.UI;
  * Vaadin 7 Edition - 7th Revision.
  * 
  **/
+
 @SuppressWarnings("serial")
 @Theme("myproject")
 //@Theme("base")
@@ -33,6 +36,8 @@ import com.vaadin.ui.UI;
 public class Chapter625 extends UI implements Handler {
 	public static final long serialVersionUID = 1L;
 	
+	File testfile = new File("testfile");
+	
 	Panel 	   panel  = new Panel();
 	FormLayout layout = new FormLayout();
 
@@ -42,7 +47,8 @@ public class Chapter625 extends UI implements Handler {
 	@Override
 	protected void init(VaadinRequest request) {
 		Utils.log("(Chapter625 init) ");
-
+		Utils.log("(Chapter625 init) pwd = " + testfile.getAbsolutePath());
+		
 		layout.setMargin(true);
 		layout.setDescription("Formlayout von Chapter6UI");
 		panel.setContent(layout);

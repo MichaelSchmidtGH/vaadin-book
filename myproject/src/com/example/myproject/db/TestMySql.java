@@ -23,6 +23,7 @@ public final class TestMySql {
         try {
             Class.forName("com.mysql.jdbc.Driver"); 
         } catch (ClassNotFoundException e) {
+            System.out.println("Class.ForName(com.mysql.jdbc.Driver) failed");
             e.printStackTrace();
         }
         try {
